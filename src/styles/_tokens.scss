@@ -8,8 +8,8 @@
   // ---------------------------------------------------------------------------
   // Tipografía
   // ---------------------------------------------------------------------------
-  --font-display: 'Cabinet Grotesk', 'Helvetica Neue', sans-serif;
-  --font-body:    'Satoshi', 'Helvetica Neue', sans-serif;
+  --font-display: 'Sora', 'Helvetica Neue', sans-serif;
+  --font-body:    'Poppins', 'Helvetica Neue', sans-serif;
   --font-mono:    'JetBrains Mono', 'Courier New', monospace;
 
   // Escala fluida (clamp: mínimo → preferido → máximo)
@@ -61,73 +61,34 @@
   --transition-slow:        320ms cubic-bezier(0.16, 1, 0.3, 1);
 
   // ---------------------------------------------------------------------------
-  // Colores — Modo claro (se sobreescriben en [data-theme="dark"])
-  // Nombrados semánticamente para que el theming por cliente
-  // solo requiera cambiar --color-primary y sus variantes.
+  // Colores — Dark mode único (sin modo claro, sin toggle)
   // ---------------------------------------------------------------------------
 
   // Superficies
-  --color-bg:               #f7f6f2;
-  --color-surface:          #f9f8f5;
-  --color-surface-2:        #fbfbf9;
-  --color-surface-offset:   #f0ede8;
-  --color-divider:          #dcd9d5;
-  --color-border:           #d4d1ca;
-
-  // Texto
-  --color-text:             #28251d;
-  --color-text-muted:       #7a7974;
-  --color-text-faint:       #bab9b4;
-  --color-text-inverse:     #f9f8f4;
-
-  // Primario — morado Edupath (ajustar por cliente vía .env → app.html)
-  --color-primary:          #7c3aed;
-  --color-primary-hover:    #6d28d9;
-  --color-primary-active:   #5b21b6;
-  --color-primary-highlight:#ede9fe;
-
-  // Acento secundario
-  --color-accent:           #0ea5e9;
-  --color-accent-hover:     #0284c7;
-
-  // Estados semánticos
-  --color-success:          #437a22;
-  --color-success-highlight:#d4dfcc;
-  --color-warning:          #d97706;
-  --color-warning-highlight:#fef3c7;
-  --color-error:            #dc2626;
-  --color-error-highlight:  #fee2e2;
-
-  // Sombras (tonadas al fondo cálido)
-  --shadow-sm: 0 1px 2px oklch(0.2 0.01 80 / 0.06);
-  --shadow-md: 0 4px 12px oklch(0.2 0.01 80 / 0.08);
-  --shadow-lg: 0 12px 32px oklch(0.2 0.01 80 / 0.12);
-}
-
-// ---------------------------------------------------------------------------
-// Modo oscuro
-// ---------------------------------------------------------------------------
-[data-theme="dark"] {
   --color-bg:               #111110;
-  --color-surface:          #1a1917;
+  --color-surface:          #191919;
   --color-surface-2:        #1f1e1c;
   --color-surface-offset:   #252421;
   --color-divider:          #2e2c2a;
   --color-border:           #3a3835;
 
+  // Texto
   --color-text:             #e8e6e2;
   --color-text-muted:       #8a8885;
   --color-text-faint:       #555350;
   --color-text-inverse:     #111110;
 
-  --color-primary:          #a78bfa;
-  --color-primary-hover:    #c4b5fd;
-  --color-primary-active:   #ddd6fe;
-  --color-primary-highlight:#2e1f5e;
+  // Primario — verde Edupath
+  --color-primary:          #28e98c;
+  --color-primary-hover:    #0F9454;
+  --color-primary-active:   #0A6539;
+  --color-primary-highlight:#032515;
 
+  // Acento secundario
   --color-accent:           #38bdf8;
   --color-accent-hover:     #7dd3fc;
 
+  // Estados semánticos
   --color-success:          #6daa45;
   --color-success-highlight:#1e3a0f;
   --color-warning:          #fbbf24;
@@ -135,39 +96,10 @@
   --color-error:            #f87171;
   --color-error-highlight:  #450a0a;
 
+  // Sombras (fondo oscuro)
   --shadow-sm: 0 1px 2px oklch(0 0 0 / 0.25);
   --shadow-md: 0 4px 12px oklch(0 0 0 / 0.35);
   --shadow-lg: 0 12px 32px oklch(0 0 0 / 0.45);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme]) {
-    --color-bg:               #111110;
-    --color-surface:          #1a1917;
-    --color-surface-2:        #1f1e1c;
-    --color-surface-offset:   #252421;
-    --color-divider:          #2e2c2a;
-    --color-border:           #3a3835;
-    --color-text:             #e8e6e2;
-    --color-text-muted:       #8a8885;
-    --color-text-faint:       #555350;
-    --color-text-inverse:     #111110;
-    --color-primary:          #a78bfa;
-    --color-primary-hover:    #c4b5fd;
-    --color-primary-active:   #ddd6fe;
-    --color-primary-highlight:#2e1f5e;
-    --color-accent:           #38bdf8;
-    --color-accent-hover:     #7dd3fc;
-    --color-success:          #6daa45;
-    --color-success-highlight:#1e3a0f;
-    --color-warning:          #fbbf24;
-    --color-warning-highlight:#451a03;
-    --color-error:            #f87171;
-    --color-error-highlight:  #450a0a;
-    --shadow-sm: 0 1px 2px oklch(0 0 0 / 0.25);
-    --shadow-md: 0 4px 12px oklch(0 0 0 / 0.35);
-    --shadow-lg: 0 12px 32px oklch(0 0 0 / 0.45);
-  }
 }
 
 // ---------------------------------------------------------------------------

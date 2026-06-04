@@ -17,7 +17,7 @@
   // ---------- Elementos ----------
 
   &__thumbnail {
-    @include aspect-ratio(16/9);
+    @include aspect-ratio(16, 9);
     background: var(--color-surface-offset);
     flex-shrink: 0;
     position: relative;
@@ -89,11 +89,13 @@
       box-shadow: var(--shadow-md);
       transform: translateY(-2px);
       border-color: color-mix(in oklab, var(--color-primary) 22%, var(--color-border));
+      text-decoration: none;
 
       .card__title,
       .course-card__link,
       .course-card__icon {
         color: var(--color-primary);
+
       }
     }
 
@@ -118,11 +120,15 @@
     &.is-active {
       background: var(--color-primary-highlight);
 
-      .card__title { color: var(--color-primary); }
+      .card__title {
+        color: var(--color-primary);
+      }
     }
 
     &.is-completed {
-      .card__title { color: var(--color-text-muted); }
+      .card__title {
+        color: var(--color-text-muted);
+      }
     }
 
     .card__thumbnail {

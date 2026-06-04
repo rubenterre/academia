@@ -3,18 +3,69 @@
 // =============================================================================
 @use 'mixins' as *;
 
-// Fuentes — se cargan en app.html o +layout.svelte
-// Fontshare: Cabinet Grotesk (display) + Satoshi (body)
-// @import en app.html:
-// <link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@700,800&f[]=satoshi@400,500,600&display=swap" rel="stylesheet">
+// =============================================================================
+// @font-face — fuentes self-hosted desde /static/fonts/
+// Sora (variable, display) • Poppins 400/500/700 (body, UI) • JetBrains Mono (code)
+// =============================================================================
+
+// Sora — variable font (wght 100–800)
+@font-face {
+  font-family: 'Sora';
+  src: url('/fonts/Sora-VariableFont_wght.woff2') format('woff2 supports variations'),
+       url('/fonts/Sora-VariableFont_wght.woff2') format('woff2');
+  font-weight: 100 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+// Poppins 400 — regular
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/Poppins-Regular.woff2') format('woff2'),
+       url('/fonts/Poppins-Regular.ttf')   format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+// Poppins 500 — medium
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/Poppins-Medium.woff2') format('woff2'),
+       url('/fonts/Poppins-Medium.ttf')   format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+// Poppins 700 — bold
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/Poppins-Bold.woff2') format('woff2'),
+       url('/fonts/Poppins-Bold.ttf')   format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+// JetBrains Mono — variable font (wght 100–800)
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('/fonts/JetBrainsMono-VariableFont_wght.woff2') format('woff2 supports variations'),
+       url('/fonts/JetBrainsMono-VariableFont_wght.woff2') format('woff2');
+  font-weight: 100 800;
+  font-style: normal;
+  font-display: swap;
+}
 
 // Jerarquía tipográfica base
-h1 { font-size: var(--text-hero);  font-weight: 800; letter-spacing: -0.02em; }
-h2 { font-size: var(--text-2xl);   font-weight: 700; letter-spacing: -0.015em; }
-h3 { font-size: var(--text-xl);    font-weight: 700; }
-h4 { font-size: var(--text-lg);    font-weight: 600; }
-h5 { font-size: var(--text-base);  font-weight: 600; }
-h6 { font-size: var(--text-sm);    font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; }
+// h1–h3: display font (Sora, ≥24px). h4–h6: body font (Poppins), peso elevado.
+h1 { font-family: var(--font-display); font-size: var(--text-hero);  font-weight: 800; letter-spacing: -0.02em; }
+h2 { font-family: var(--font-display); font-size: var(--text-2xl);   font-weight: 700; letter-spacing: -0.015em; }
+h3 { font-family: var(--font-display); font-size: var(--text-xl);    font-weight: 700; }
+h4 { font-family: var(--font-body);    font-size: var(--text-lg);    font-weight: 600; }
+h5 { font-family: var(--font-body);    font-size: var(--text-base);  font-weight: 600; }
+h6 { font-family: var(--font-body);    font-size: var(--text-sm);    font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; }
 
 p {
   font-size: var(--text-base);

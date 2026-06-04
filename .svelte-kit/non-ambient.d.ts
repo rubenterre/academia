@@ -29,15 +29,17 @@ declare module "$app/types" {
 	type MatcherParam<M> = M extends (param : string) => param is (infer U extends string) ? U : string;
 
 	export interface AppTypes {
-		RouteId(): "/";
+		RouteId(): "/" | "/cursos" | "/cursos/[slug]";
 		RouteParams(): {
-			
+			"/cursos/[slug]": { slug: string }
 		};
 		LayoutParams(): {
-			"/": Record<string, never>
+			"/": { slug?: string | undefined };
+			"/cursos": { slug?: string | undefined };
+			"/cursos/[slug]": { slug: string }
 		};
-		Pathname(): "/";
+		Pathname(): "/" | "/cursos" | `/cursos/${string}` & {};
 		ResolvedPathname(): `${"" | `/${string}`}${ReturnType<AppTypes['Pathname']>}`;
-		Asset(): "/robots.txt" | string & {};
+		Asset(): "/.DS_Store" | "/fonts/JetBrainsMono-VariableFont_wght.ttf" | "/fonts/JetBrainsMono-VariableFont_wght.woff2" | "/fonts/Poppins-Bold.ttf" | "/fonts/Poppins-Bold.woff2" | "/fonts/Poppins-Medium.ttf" | "/fonts/Poppins-Medium.woff2" | "/fonts/Poppins-Regular.ttf" | "/fonts/Poppins-Regular.woff2" | "/fonts/Sora-VariableFont_wght.ttf" | "/fonts/Sora-VariableFont_wght.woff2" | "/robots.txt" | string & {};
 	}
 }

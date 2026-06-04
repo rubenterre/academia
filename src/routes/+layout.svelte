@@ -2,6 +2,7 @@
 	import favicon from '$lib/assets/favicon.svg';
 	import '../styles/main.scss';
 	import Footer from '$lib/components/layouts/Footer.svelte';
+	import Navbar from '$lib/components/layouts/Navbar.svelte';
 
 	let { children } = $props();
 </script>
@@ -14,6 +15,8 @@
 		rel="stylesheet"
 	/>
 </svelte:head>
+
+<Navbar />
 
 {@render children()}
 

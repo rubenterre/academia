@@ -1,0 +1,172 @@
+// =============================================================================
+// _cursos.scss — Página /cursos (catálogo público)
+// =============================================================================
+@use '../mixins' as *;
+
+// ---------------------------------------------------------------------------
+// Page header — breadcrumb + título
+// ---------------------------------------------------------------------------
+.page-header {
+  background: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+  padding-block: var(--space-6);
+
+  &__inner {
+    @include container(var(--content-wide));
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-4);
+    flex-wrap: wrap;
+  }
+
+  &__title {
+    font-size: var(--text-xl);
+    font-weight: 700;
+    color: var(--color-text);
+    line-height: 1.2;
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Breadcrumb
+// ---------------------------------------------------------------------------
+.breadcrumb {
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: var(--space-1);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__item {
+    font-size: var(--text-sm);
+    color: var(--color-text-muted);
+  }
+
+  &__item--separator {
+    color: var(--color-text-faint);
+    user-select: none;
+  }
+
+  &__item--current {
+    color: var(--color-primary);
+    font-weight: 500;
+  }
+
+  &__link {
+    color: var(--color-text-muted);
+    text-decoration: none;
+    transition: color var(--transition-interactive);
+    @include focus-ring;
+
+    &:hover {
+      color: var(--color-text);
+    }
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Página de cursos
+// ---------------------------------------------------------------------------
+.courses-page {
+  padding-block: clamp(var(--space-10), 6vw, var(--space-16));
+
+  &__inner {
+    @include container(var(--content-wide));
+  }
+
+  // Barra de filtros + contador
+  &__filters {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+    margin-bottom: var(--space-8);
+  }
+
+  &__count {
+    margin-left: auto;
+    font-size: var(--text-sm);
+    color: var(--color-text-muted);
+  }
+
+  // Grid responsive: 1 → 2 → 3 columnas
+  &__grid {
+    display: grid;
+    gap: var(--space-6);
+    grid-template-columns: 1fr;
+
+    @include respond-to('md') {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include respond-to('lg') {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Botones de filtro
+// ---------------------------------------------------------------------------
+.filter-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  padding: var(--space-1) var(--space-4);
+  font-size: var(--text-sm);
+  font-weight: 500;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--color-border);
+  background: transparent;
+  color: var(--color-text-muted);
+  cursor: pointer;
+  min-height: 36px;
+  @include interactive-transition(color background border-color);
+  @include focus-ring;
+
+  &:hover {
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+    background: var(--color-primary-highlight);
+  }
+
+  &--active {
+    background: var(--color-primary-highlight);
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+    font-weight: 600;
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Empty state
+// ---------------------------------------------------------------------------
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: var(--space-16) var(--space-8);
+  gap: var(--space-4);
+
+  &__icon {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  &__title {
+    font-size: var(--text-lg);
+    font-weight: 700;
+    color: var(--color-text);
+  }
+
+  &__text {
+    font-size: var(--text-base);
+    color: var(--color-text-muted);
+    max-width: 42ch;
+  }
+}

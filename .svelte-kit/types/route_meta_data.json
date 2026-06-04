@@ -1,5 +1,11 @@
 {
 	"/": [
 		"src/routes/+page.server.ts"
+	],
+	"/cursos": [
+		"src/routes/cursos/+page.server.ts"
+	],
+	"/cursos/[slug]": [
+		"src/routes/cursos/[slug]/+page.ts"
 	]
 }
