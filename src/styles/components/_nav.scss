@@ -1,0 +1,159 @@
+// =============================================================================
+// _nav.scss — Componente: nav (header público) + sidebar (zona privada)
+// =============================================================================
+@use '../mixins' as *;
+
+// ---------------------------------------------------------------------------
+// Header público
+// ---------------------------------------------------------------------------
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+
+  &__inner {
+    @include container(var(--content-wide));
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 64px;
+    gap: var(--space-6);
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    text-decoration: none;
+    color: var(--color-text);
+    font-size: var(--text-lg);
+    font-weight: 700;
+    font-family: var(--font-display);
+    flex-shrink: 0;
+    @include focus-ring;
+
+    img {
+      height: 32px;
+      width: auto;
+    }
+  }
+
+  &__links {
+    display: none;
+    list-style: none;
+    align-items: center;
+    gap: var(--space-1);
+
+    @include respond-to('md') {
+      display: flex;
+    }
+  }
+
+  &__link {
+    font-size: var(--text-sm);
+    font-weight: 500;
+    color: var(--color-text-muted);
+    text-decoration: none;
+    padding: var(--space-2) var(--space-3);
+    border-radius: var(--radius-md);
+    @include interactive-transition;
+    @include focus-ring;
+
+    &:hover       { color: var(--color-text); background: var(--color-surface-offset); }
+    &.is-active   { color: var(--color-primary); background: var(--color-primary-highlight); }
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    margin-left: auto;
+  }
+
+  // Botón hamburguesa (móvil)
+  &__toggle {
+    display: flex;
+    @include respond-to('md') { display: none; }
+  }
+
+  // Menú móvil desplegable
+  &__mobile {
+    display: none;
+    background: var(--color-surface);
+    border-top: 1px solid var(--color-border);
+    padding: var(--space-4);
+
+    &.is-open { display: block; }
+
+    .nav__link {
+      display: block;
+      padding: var(--space-3) var(--space-4);
+    }
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Sidebar zona privada
+// ---------------------------------------------------------------------------
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  padding: var(--space-6) var(--space-4);
+  gap: var(--space-1);
+
+  &__logo {
+    padding: var(--space-2) var(--space-3);
+    margin-bottom: var(--space-4);
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    font-weight: 700;
+    font-family: var(--font-display);
+    color: var(--color-text);
+    text-decoration: none;
+    @include focus-ring;
+  }
+
+  &__section {
+    margin-top: var(--space-4);
+    margin-bottom: var(--space-1);
+    font-size: var(--text-xs);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--color-text-faint);
+    padding-inline: var(--space-3);
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    padding: var(--space-2) var(--space-3);
+    font-size: var(--text-sm);
+    font-weight: 500;
+    color: var(--color-text-muted);
+    text-decoration: none;
+    border-radius: var(--radius-md);
+    min-height: 44px;
+    @include interactive-transition;
+    @include focus-ring;
+
+    &:hover     { color: var(--color-text); background: var(--color-surface-offset); }
+    &.is-active {
+      color: var(--color-primary);
+      background: var(--color-primary-highlight);
+      font-weight: 600;
+    }
+
+    &__icon {
+      width: 20px;
+      height: 20px;
+      flex-shrink: 0;
+    }
+  }
+}

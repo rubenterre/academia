@@ -1,0 +1,84 @@
+// =============================================================================
+// _typography.scss — Estilos tipográficos base
+// =============================================================================
+@use 'mixins' as *;
+
+// Fuentes — se cargan en app.html o +layout.svelte
+// Fontshare: Cabinet Grotesk (display) + Satoshi (body)
+// @import en app.html:
+// <link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@700,800&f[]=satoshi@400,500,600&display=swap" rel="stylesheet">
+
+// Jerarquía tipográfica base
+h1 { font-size: var(--text-hero);  font-weight: 800; letter-spacing: -0.02em; }
+h2 { font-size: var(--text-2xl);   font-weight: 700; letter-spacing: -0.015em; }
+h3 { font-size: var(--text-xl);    font-weight: 700; }
+h4 { font-size: var(--text-lg);    font-weight: 600; }
+h5 { font-size: var(--text-base);  font-weight: 600; }
+h6 { font-size: var(--text-sm);    font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; }
+
+p {
+  font-size: var(--text-base);
+  line-height: 1.7;
+  color: var(--color-text);
+
+  &.lead {
+    font-size: var(--text-lg);
+    color: var(--color-text-muted);
+    line-height: 1.6;
+  }
+
+  &.caption {
+    font-size: var(--text-xs);
+    color: var(--color-text-faint);
+    letter-spacing: 0.02em;
+  }
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+  @include interactive-transition;
+
+  &:hover {
+    color: var(--color-primary-hover);
+    text-decoration: underline;
+  }
+
+  @include focus-ring;
+}
+
+strong, b { font-weight: 600; }
+em, i     { font-style: italic; }
+
+code {
+  font-family: var(--font-mono);
+  font-size: 0.9em;
+  background: var(--color-surface-offset);
+  padding: 0.15em 0.4em;
+  border-radius: var(--radius-sm);
+  color: var(--color-primary);
+}
+
+pre {
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  background: var(--color-surface-offset);
+  padding: var(--space-4);
+  border-radius: var(--radius-md);
+  overflow-x: auto;
+  line-height: 1.6;
+
+  code {
+    background: none;
+    padding: 0;
+    color: inherit;
+  }
+}
+
+blockquote {
+  border-left: 3px solid var(--color-primary);
+  padding-left: var(--space-4);
+  color: var(--color-text-muted);
+  font-style: italic;
+  margin-block: var(--space-6);
+}

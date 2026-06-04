@@ -1,0 +1,76 @@
+// =============================================================================
+// _layout.scss — Contenedores, grid y zonas de la aplicación
+// =============================================================================
+@use 'mixins' as *;
+
+// ---------------------------------------------------------------------------
+// Contenedor genérico
+// ---------------------------------------------------------------------------
+.container {
+  @include container;
+
+  &--narrow { @include container(var(--content-narrow)); }
+  &--wide   { @include container(var(--content-wide)); }
+}
+
+// ---------------------------------------------------------------------------
+// Grid base (auto-fill responsive)
+// ---------------------------------------------------------------------------
+.grid {
+  display: grid;
+  gap: var(--space-6);
+
+  &--2 { grid-template-columns: repeat(auto-fill, minmax(min(280px, 100%), 1fr)); }
+  &--3 { grid-template-columns: repeat(auto-fill, minmax(min(240px, 100%), 1fr)); }
+  &--4 { grid-template-columns: repeat(auto-fill, minmax(min(200px, 100%), 1fr)); }
+
+  &--sidebar {
+    @include respond-to('lg') {
+      grid-template-columns: 260px 1fr;
+    }
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Zonas de la app (public / app / admin)
+// ---------------------------------------------------------------------------
+
+// Zona pública: header fijo + contenido + footer
+.layout-public {
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+
+  &__main {
+    flex: 1;
+  }
+}
+
+// Zona privada (dashboard): sidebar + contenido
+.layout-app {
+  display: grid;
+  min-height: 100dvh;
+
+  @include respond-to('lg') {
+    grid-template-columns: 260px 1fr;
+  }
+
+  &__sidebar {
+    position: sticky;
+    top: 0;
+    height: 100dvh;
+    overflow-y: auto;
+    background: var(--color-surface);
+    border-right: 1px solid var(--color-border);
+  }
+
+  &__main {
+    overflow-y: auto;
+    padding: var(--space-8);
+  }
+}
+
+// Sección con padding fluido
+.section {
+  padding-block: clamp(var(--space-12), 6vw, var(--space-24));
+}

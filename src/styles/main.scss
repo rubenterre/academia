@@ -1,0 +1,31 @@
+// =============================================================================
+// main.scss — Punto de entrada de estilos
+// Orden ITCSS: Settings → Tools → Generic → Base → Objects → Components → Pages
+// =============================================================================
+
+// 1. Settings (tokens y variables)
+@use 'tokens';
+
+// 2. Tools (mixins, funciones)
+@use 'mixins';
+
+// 3. Generic (reset)
+@use 'reset';
+
+// 4. Base (tipografía global)
+@use 'typography';
+
+// 5. Objects (layout sin apariencia)
+@use 'layout';
+
+// 6. Components
+@use 'components/button';
+@use 'components/card';
+@use 'components/nav';
+@use 'components/form';
+@use 'components/progress';
+@use 'components/badge';
+
+// 7. Pages (estilos específicos de ruta)
+@use 'pages/home';
+@use 'pages/dashboard';

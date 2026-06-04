@@ -1,0 +1,83 @@
+// =============================================================================
+// _form.scss — Componentes de formulario
+// BEM: .form-field, .form-label, .form-input, .form-select,
+//      .form-textarea, .form-helper, .form-error
+// =============================================================================
+@use '../mixins' as *;
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.form-label {
+  font-size: var(--text-sm);
+  font-weight: 500;
+  color: var(--color-text);
+
+  &--required::after {
+    content: ' *';
+    color: var(--color-error);
+  }
+}
+
+.form-input,
+.form-select,
+.form-textarea {
+  width: 100%;
+  padding: var(--space-2) var(--space-4);
+  font-size: var(--text-base);
+  line-height: 1.5;
+  color: var(--color-text);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  min-height: 44px;
+  @include interactive-transition(border-color box-shadow background);
+  @include focus-ring;
+
+  &::placeholder {
+    color: var(--color-text-faint);
+  }
+
+  &:hover {
+    border-color: var(--color-text-muted);
+  }
+
+  &:focus {
+    border-color: var(--color-primary);
+    background: var(--color-surface-2);
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    background: var(--color-surface-offset);
+  }
+
+  &.has-error {
+    border-color: var(--color-error);
+    background: var(--color-error-highlight);
+
+    &:focus { box-shadow: 0 0 0 3px oklch(from var(--color-error) l c h / 0.15); }
+  }
+}
+
+.form-textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.form-helper {
+  font-size: var(--text-xs);
+  color: var(--color-text-faint);
+  max-width: none;
+}
+
+.form-error {
+  font-size: var(--text-xs);
+  color: var(--color-error);
+  font-weight: 500;
+  max-width: none;
+}

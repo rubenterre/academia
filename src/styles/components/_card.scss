@@ -1,0 +1,168 @@
+// =============================================================================
+// _card.scss — Componente: card
+// BEM: .card, .card__thumbnail, .card__body, .card__title, .card__meta,
+//      .card__footer, .card--course, .card--lesson, .card--stat
+// =============================================================================
+@use '../mixins' as *;
+
+.card {
+  @include surface(1);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  @include interactive-transition(box-shadow transform);
+
+  // ---------- Elementos ----------
+
+  &__thumbnail {
+    @include aspect-ratio(16/9);
+    background: var(--color-surface-offset);
+    flex-shrink: 0;
+  }
+
+  &__body {
+    padding: var(--space-5);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+  }
+
+  &__badge {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-1);
+    font-size: var(--text-xs);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-primary);
+    background: var(--color-primary-highlight);
+    padding: var(--space-1) var(--space-2);
+    border-radius: var(--radius-full);
+  }
+
+  &__title {
+    font-size: var(--text-lg);
+    font-weight: 700;
+    color: var(--color-text);
+    @include truncate(2);
+    margin: 0;
+  }
+
+  &__description {
+    font-size: var(--text-sm);
+    color: var(--color-text-muted);
+    @include truncate(3);
+    flex: 1;
+    max-width: none;
+  }
+
+  &__meta {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    font-size: var(--text-xs);
+    color: var(--color-text-faint);
+    flex-wrap: wrap;
+  }
+
+  &__footer {
+    padding: var(--space-4) var(--space-5);
+    border-top: 1px solid var(--color-divider);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-3);
+  }
+
+  // ---------- Variante: curso ----------
+  &--course {
+    cursor: pointer;
+
+    &:hover {
+      box-shadow: var(--shadow-md);
+      transform: translateY(-2px);
+    }
+
+    &:active {
+      transform: translateY(0);
+    }
+  }
+
+  // ---------- Variante: lección (en sidebar del player) ----------
+  &--lesson {
+    flex-direction: row;
+    align-items: center;
+    padding: var(--space-3) var(--space-4);
+    border-radius: var(--radius-md);
+    gap: var(--space-3);
+    cursor: pointer;
+
+    &:hover {
+      background: var(--color-surface-offset);
+    }
+
+    &.is-active {
+      background: var(--color-primary-highlight);
+
+      .card__title { color: var(--color-primary); }
+    }
+
+    &.is-completed {
+      .card__title { color: var(--color-text-muted); }
+    }
+
+    .card__thumbnail {
+      width: 80px;
+      min-width: 80px;
+      aspect-ratio: 16/9;
+      border-radius: var(--radius-sm);
+    }
+
+    .card__body {
+      padding: 0;
+      gap: var(--space-1);
+    }
+
+    .card__title {
+      font-size: var(--text-sm);
+      @include truncate(2);
+    }
+  }
+
+  // ---------- Variante: estadística (dashboard) ----------
+  &--stat {
+    padding: var(--space-5);
+    flex-direction: row;
+    align-items: flex-start;
+    gap: var(--space-4);
+
+    .card__icon {
+      width: 44px;
+      height: 44px;
+      border-radius: var(--radius-md);
+      background: var(--color-primary-highlight);
+      color: var(--color-primary);
+      display: grid;
+      place-items: center;
+      flex-shrink: 0;
+    }
+
+    .card__value {
+      font-size: var(--text-2xl);
+      font-weight: 800;
+      line-height: 1;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .card__label {
+      font-size: var(--text-xs);
+      color: var(--color-text-muted);
+      margin-top: var(--space-1);
+      max-width: none;
+    }
+  }
+}

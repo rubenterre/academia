@@ -1,0 +1,44 @@
+// =============================================================================
+// _badge.scss — Badges, chips y etiquetas
+// BEM: .badge, .badge--primary, .badge--success, .badge--warning,
+//      .badge--error, .badge--neutral
+// =============================================================================
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  padding: var(--space-1) var(--space-2);
+  font-size: var(--text-xs);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-radius: var(--radius-full);
+  line-height: 1;
+  white-space: nowrap;
+
+  &--primary {
+    color: var(--color-primary);
+    background: var(--color-primary-highlight);
+  }
+
+  &--success {
+    color: var(--color-success);
+    background: var(--color-success-highlight);
+  }
+
+  &--warning {
+    color: var(--color-warning);
+    background: var(--color-warning-highlight);
+  }
+
+  &--error {
+    color: var(--color-error);
+    background: var(--color-error-highlight);
+  }
+
+  &--neutral {
+    color: var(--color-text-muted);
+    background: var(--color-surface-offset);
+  }
+}
