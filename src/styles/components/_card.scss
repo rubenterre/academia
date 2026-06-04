@@ -12,7 +12,7 @@
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  @include interactive-transition(box-shadow transform);
+  @include interactive-transition(box-shadow transform border-color);
 
   // ---------- Elementos ----------
 
@@ -20,6 +20,7 @@
     @include aspect-ratio(16/9);
     background: var(--color-surface-offset);
     flex-shrink: 0;
+    position: relative;
   }
 
   &__body {
@@ -81,10 +82,19 @@
   // ---------- Variante: curso ----------
   &--course {
     cursor: pointer;
+    text-decoration: none;
+    color: inherit;
 
     &:hover {
       box-shadow: var(--shadow-md);
       transform: translateY(-2px);
+      border-color: color-mix(in oklab, var(--color-primary) 22%, var(--color-border));
+
+      .card__title,
+      .course-card__link,
+      .course-card__icon {
+        color: var(--color-primary);
+      }
     }
 
     &:active {
@@ -164,5 +174,65 @@
       margin-top: var(--space-1);
       max-width: none;
     }
+  }
+}
+
+.course-card {
+  &__thumbnail {
+    overflow: hidden;
+  }
+
+  &__image,
+  &__placeholder {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__image {
+    object-fit: cover;
+  }
+
+  &__placeholder {
+    display: grid;
+    place-items: center;
+    padding: var(--space-4);
+    background:
+      radial-gradient(circle at top left, color-mix(in oklab, var(--color-primary) 24%, transparent), transparent 42%),
+      linear-gradient(135deg, var(--color-surface-offset), var(--color-surface));
+    color: var(--color-primary);
+    font-size: var(--text-sm);
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    flex-wrap: wrap;
+  }
+
+  &__footer {
+    color: var(--color-text-muted);
+  }
+
+  &__link {
+    font-size: var(--text-sm);
+    font-weight: 600;
+    color: inherit;
+  }
+
+  &__icon {
+    font-size: 1.125rem;
+    line-height: 1;
+    color: inherit;
+    @include interactive-transition(transform color);
+  }
+
+  &:hover &__icon {
+    transform: translateX(2px);
   }
 }
