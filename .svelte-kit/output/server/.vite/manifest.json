@@ -157,9 +157,9 @@
     "file": "_app/immutable/assets/cosmonauta_proyecto.CBB2pfvJ.avif",
     "src": "src/lib/assets/images/cosmonauta_proyecto.avif"
   },
-  "src/lib/assets/images/ruben_terre_avatar.png": {
-    "file": "_app/immutable/assets/ruben_terre_avatar.DPoc5s2T.png",
-    "src": "src/lib/assets/images/ruben_terre_avatar.png"
+  "src/lib/assets/images/ruben_terre_avatar.avif": {
+    "file": "_app/immutable/assets/ruben_terre_avatar.D4_gE-Zn.avif",
+    "src": "src/lib/assets/images/ruben_terre_avatar.avif"
   },
   "src/routes/+layout.svelte": {
     "file": "entries/pages/_layout.svelte.js",
@@ -173,7 +173,7 @@
       "_BuyMeCoffee.js"
     ],
     "css": [
-      "_app/immutable/assets/_layout.BwTnj6fw.css"
+      "_app/immutable/assets/_layout.DN_4Q9Ip.css"
     ]
   },
   "src/routes/+page.server.ts": {
@@ -313,7 +313,7 @@
     ],
     "assets": [
       "_app/immutable/assets/cosmonauta_proyecto.CBB2pfvJ.avif",
-      "_app/immutable/assets/ruben_terre_avatar.DPoc5s2T.png",
+      "_app/immutable/assets/ruben_terre_avatar.D4_gE-Zn.avif",
       "_app/immutable/assets/sass_icon.D2SeJGAU.svg"
     ]
   }

@@ -28,7 +28,7 @@
 	}
 </script>
 
-<header class="nav" role="banner">
+<header class="nav">
 	<div class="nav__inner">
 
 		<!-- Columna izquierda: Logo -->

@@ -4,7 +4,7 @@
 	import cosmonauta from '$lib/assets/images/cosmonauta_green_alpha2.avif'
 
 	let { data }: { data: PageData } = $props();
-	const { cursosDestacados } = data;
+	const cursosDestacados = $derived(data.cursosDestacados);
 </script>
 
 <svelte:head>

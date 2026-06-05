@@ -2,8 +2,8 @@ import { H as escape_html, V as attr, a as ensure_array_like, d as html, n as at
 //#region src/lib/assets/images/cosmonauta_proyecto.avif
 var cosmonauta_proyecto_default = "/_app/immutable/assets/cosmonauta_proyecto.CBB2pfvJ.avif";
 //#endregion
-//#region src/lib/assets/images/ruben_terre_avatar.png
-var ruben_terre_avatar_default = "/_app/immutable/assets/ruben_terre_avatar.DPoc5s2T.png";
+//#region src/lib/assets/images/ruben_terre_avatar.avif
+var ruben_terre_avatar_default = "/_app/immutable/assets/ruben_terre_avatar.D4_gE-Zn.avif";
 //#endregion
 //#region src/lib/assets/icons/svelte_icon.svg
 var svelte_icon_default = "data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3csvg%20id='Capa_1'%20data-name='Capa%201'%20xmlns='http://www.w3.org/2000/svg'%20version='1.1'%20viewBox='0%200%2035%2042'%3e%3cdefs%3e%3cstyle%3e%20.cls-1%20{%20fill:%20%23ff3e00;%20}%20.cls-1,%20.cls-2%20{%20stroke-width:%200px;%20}%20.cls-2%20{%20fill:%20%23fff;%20}%20%3c/style%3e%3c/defs%3e%3cpath%20class='cls-1'%20d='M32,5.7C28.2.3,20.8-1.3,15.5,2.1l-9.4,6c-2.6,1.6-4.3,4.2-4.9,7.2-.4,2.5,0,5.1,1.1,7.3-.8,1.2-1.4,2.6-1.6,4-.5,3,.2,6.2,2,8.7,3.7,5.4,11.2,7,16.5,3.5l9.4-6c2.6-1.6,4.3-4.2,4.9-7.2.4-2.5,0-5.1-1.1-7.3.8-1.2,1.4-2.6,1.6-4,.5-3-.2-6.2-2-8.7'/%3e%3cpath%20class='cls-2'%20d='M14.5,35.9c-3,.8-6.2-.4-8-3-1.1-1.5-1.5-3.4-1.2-5.2,0-.3.1-.6.2-.9l.2-.5.5.4c1.1.8,2.4,1.4,3.7,1.8h.3c0,.1,0,.5,0,.5,0,.5,0,1,.4,1.4.5.8,1.5,1.1,2.4.9.2,0,.4-.1.6-.3l9.4-6c.5-.3.8-.8.9-1.3,0-.6,0-1.1-.4-1.6-.5-.8-1.5-1.1-2.4-.9-.2,0-.4.1-.6.3l-3.6,2.3c-.6.4-1.2.7-1.9.8-3,.8-6.2-.4-8-3-1.1-1.5-1.5-3.4-1.2-5.2.3-1.8,1.4-3.4,2.9-4.3l9.4-6c.6-.4,1.2-.7,1.9-.8,3-.8,6.2.4,8,3,1.1,1.5,1.5,3.4,1.2,5.2,0,.3-.1.6-.2.9l-.2.5-.5-.4c-1.1-.8-2.4-1.4-3.7-1.8h-.3c0-.1,0-.5,0-.5,0-.5,0-1-.4-1.4-.5-.8-1.5-1.1-2.4-.9-.2,0-.4.1-.6.3l-9.4,6c-.5.3-.8.8-.9,1.3,0,.6,0,1.1.4,1.6.5.8,1.5,1.1,2.4.9.2,0,.4-.1.6-.3l3.6-2.3c.6-.4,1.2-.7,1.9-.8,3-.8,6.2.4,8,3,1.1,1.5,1.5,3.4,1.2,5.2-.3,1.8-1.4,3.4-2.9,4.3l-9.4,6c-.6.4-1.2.7-1.9.8'/%3e%3c/svg%3e";

@@ -329,7 +329,7 @@
     max-width: min(100%, 320px);
   }
 
-  @include respond-to('md-down') {
+  @media (max-width: 767px) {
     flex-direction: column;
     align-items: stretch;
 

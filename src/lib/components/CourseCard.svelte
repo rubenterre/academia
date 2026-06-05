@@ -37,10 +37,10 @@
 		avanzado: 'Avanzado'
 	};
 
-	const href = `/cursos/${slug}`;
-	const normalizedLevel = level.toLowerCase();
-	const levelClass = levelClassMap[normalizedLevel] ?? 'badge--neutral';
-	const levelLabel = levelLabelMap[normalizedLevel] ?? level;
+	const href = $derived(`/cursos/${slug}`);
+	const normalizedLevel = $derived(level.toLowerCase());
+	const levelClass = $derived(levelClassMap[normalizedLevel] ?? 'badge--neutral');
+	const levelLabel = $derived(levelLabelMap[normalizedLevel] ?? level);
 </script>
 
 <a class="card card--course course-card" href={href} aria-label={`Abrir el curso ${title}`}>

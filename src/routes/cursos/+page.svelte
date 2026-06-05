@@ -3,7 +3,7 @@
 	import CourseCard from '$lib/components/CourseCard.svelte';
 
 	let { data }: { data: PageData } = $props();
-	const { cursos } = data;
+	const cursos = $derived(data.cursos);
 
 	// ── Filtrado por nivel ──────────────────────────────────────────────────────
 	const niveles = ['todos', 'principiante', 'intermedio', 'avanzado'] as const;

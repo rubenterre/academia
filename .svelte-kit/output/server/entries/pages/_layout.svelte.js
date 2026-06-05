@@ -163,7 +163,7 @@ function Navbar($$renderer, $$props) {
 			if (href === "/") return store_get($$store_subs ??= {}, "$page", page).url.pathname === "/";
 			return store_get($$store_subs ??= {}, "$page", page).url.pathname.startsWith(href);
 		}
-		$$renderer.push(`<header class="nav svelte-10vw0je" role="banner"><div class="nav__inner svelte-10vw0je"><a href="/" class="nav__logo svelte-10vw0je" aria-label="Academia — Inicio"><img${attr("src", logo_rt_default)} alt="Logo de Academia de Rubén Terré" width="34" height="34" class="nav__logo-img svelte-10vw0je"/> <span class="nav__logo-text svelte-10vw0je">Academia</span></a> <nav class="nav__center svelte-10vw0je" aria-label="Navegación principal"><ul class="nav__links svelte-10vw0je" role="list"><!--[-->`);
+		$$renderer.push(`<header class="nav svelte-10vw0je"><div class="nav__inner svelte-10vw0je"><a href="/" class="nav__logo svelte-10vw0je" aria-label="Academia — Inicio"><img${attr("src", logo_rt_default)} alt="Logo de Academia de Rubén Terré" width="34" height="34" class="nav__logo-img svelte-10vw0je"/> <span class="nav__logo-text svelte-10vw0je">Academia</span></a> <nav class="nav__center svelte-10vw0je" aria-label="Navegación principal"><ul class="nav__links svelte-10vw0je" role="list"><!--[-->`);
 		const each_array = ensure_array_like(navLinks);
 		for (let $$index = 0, $$length = each_array.length; $$index < $$length; $$index++) {
 			let link = each_array[$$index];
