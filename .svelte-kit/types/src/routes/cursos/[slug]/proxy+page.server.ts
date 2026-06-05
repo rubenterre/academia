@@ -1,9 +1,11 @@
+// @ts-nocheck
 // src/routes/cursos/[slug]/+page.server.ts
 import { error } from '@sveltejs/kit';
 import { getCursos } from '$lib/content/cursos';
+import { getLeccionesByCurso } from '$lib/content/lecciones';
 import type { PageServerLoad } from './$types';
 
-export const load: PageServerLoad = async ({ params }) => {
+export const load = async ({ params }: Parameters<PageServerLoad>[0]) => {
 	const { slug } = params;
 
 	// Cargamos el módulo .md correspondiente al slug
@@ -29,6 +31,8 @@ export const load: PageServerLoad = async ({ params }) => {
 		.filter((c) => c.slug !== slug && c.publicado)
 		.slice(0, 3);
 
+	const leccionesCurso = await getLeccionesByCurso(slug);
+
 	return {
 		curso: {
 			titulo:     String(meta.titulo     ?? ''),
@@ -43,7 +47,8 @@ export const load: PageServerLoad = async ({ params }) => {
 			publicado:  Boolean(meta.publicado ?? false),
 			destacado:  Boolean(meta.destacado ?? false),
 		},
-		contenido: entrada.default, // componente Svelte renderizado por mdsvex
+		contenido: entrada.default,
 		relacionados,
+		leccionesCurso
 	};
 };

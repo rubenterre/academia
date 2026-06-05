@@ -3,7 +3,7 @@
 	import CourseCard from '$lib/components/CourseCard.svelte';
 
 	let { data }: { data: PageData } = $props();
-	const { curso, contenido: Contenido, relacionados } = data;
+	const { curso, contenido: Contenido, relacionados, leccionesCurso } = data;
 
 	const nivelLabel: Record<string, string> = {
 		principiante: 'Principiante',
@@ -120,6 +120,25 @@
 						<Contenido />
 					</div>
 				</section>
+
+				{#if leccionesCurso.length > 0}
+					<section class="course-detail__section">
+						<h2 class="course-detail__section-title">Lecciones del curso</h2>
+						<ol class="lesson-index__list">
+							{#each leccionesCurso as leccion}
+								<li class="lesson-index__item">
+									<a
+										href={`/cursos/${curso.slug}/lecciones/${leccion.slug}`}
+										class="lesson-index__link"
+									>
+										<span class="lesson-index__order">{leccion.orden}.</span>
+										<span>{leccion.titulo}</span>
+									</a>
+								</li>
+							{/each}
+						</ol>
+					</section>
+				{/if}
 
 			</div>
 

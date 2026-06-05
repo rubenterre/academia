@@ -38,18 +38,12 @@
  * The above values will be the same _even if_ different values for `ENVIRONMENT` or `PUBLIC_BASE_URL` are set at runtime, as they are statically replaced in your code with their build time values.
  */
 declare module '$env/static/private' {
-	export const WARP_CLI_AGENT_PROTOCOL_VERSION: string;
-	export const TERM_PROGRAM: string;
 	export const NODE: string;
 	export const INIT_CWD: string;
-	export const WARP_HONOR_PS1: string;
-	export const TERM: string;
 	export const SHELL: string;
 	export const HOMEBREW_REPOSITORY: string;
 	export const TMPDIR: string;
 	export const npm_config_global_prefix: string;
-	export const WARP_TERMINAL_SESSION_UUID: string;
-	export const TERM_PROGRAM_VERSION: string;
 	export const FPATH: string;
 	export const COLOR: string;
 	export const npm_config_noproxy: string;
@@ -59,9 +53,7 @@ declare module '$env/static/private' {
 	export const npm_config_globalconfig: string;
 	export const SSH_AUTH_SOCK: string;
 	export const __CF_USER_TEXT_ENCODING: string;
-	export const WARP_IS_LOCAL_SHELL_SESSION: string;
 	export const npm_execpath: string;
-	export const WARP_USE_SSH_WRAPPER: string;
 	export const PATH: string;
 	export const npm_package_json: string;
 	export const npm_config_engine_strict: string;
@@ -75,29 +67,23 @@ declare module '$env/static/private' {
 	export const EDITOR: string;
 	export const npm_package_name: string;
 	export const LANG: string;
-	export const WARP_FOCUS_URL: string;
 	export const npm_config_npm_version: string;
 	export const XPC_FLAGS: string;
 	export const npm_config_node_gyp: string;
 	export const npm_package_version: string;
 	export const XPC_SERVICE_NAME: string;
-	export const SHLVL: string;
 	export const HOME: string;
+	export const SHLVL: string;
 	export const HOMEBREW_PREFIX: string;
 	export const npm_config_cache: string;
 	export const LOGNAME: string;
 	export const npm_lifecycle_script: string;
-	export const LC_CTYPE: string;
-	export const SSH_SOCKET_DIR: string;
 	export const npm_config_user_agent: string;
 	export const INFOPATH: string;
 	export const HOMEBREW_CELLAR: string;
-	export const WARP_CLIENT_VERSION: string;
 	export const OSLogRateLimit: string;
-	export const CONDA_CHANGEPS1: string;
 	export const npm_node_execpath: string;
 	export const npm_config_prefix: string;
-	export const COLORTERM: string;
 	export const NODE_ENV: string;
 }
 
@@ -185,18 +171,12 @@ declare module '$env/static/public' {
  */
 declare module '$env/dynamic/private' {
 	export const env: {
-		WARP_CLI_AGENT_PROTOCOL_VERSION: string;
-		TERM_PROGRAM: string;
 		NODE: string;
 		INIT_CWD: string;
-		WARP_HONOR_PS1: string;
-		TERM: string;
 		SHELL: string;
 		HOMEBREW_REPOSITORY: string;
 		TMPDIR: string;
 		npm_config_global_prefix: string;
-		WARP_TERMINAL_SESSION_UUID: string;
-		TERM_PROGRAM_VERSION: string;
 		FPATH: string;
 		COLOR: string;
 		npm_config_noproxy: string;
@@ -206,9 +186,7 @@ declare module '$env/dynamic/private' {
 		npm_config_globalconfig: string;
 		SSH_AUTH_SOCK: string;
 		__CF_USER_TEXT_ENCODING: string;
-		WARP_IS_LOCAL_SHELL_SESSION: string;
 		npm_execpath: string;
-		WARP_USE_SSH_WRAPPER: string;
 		PATH: string;
 		npm_package_json: string;
 		npm_config_engine_strict: string;
@@ -222,29 +200,23 @@ declare module '$env/dynamic/private' {
 		EDITOR: string;
 		npm_package_name: string;
 		LANG: string;
-		WARP_FOCUS_URL: string;
 		npm_config_npm_version: string;
 		XPC_FLAGS: string;
 		npm_config_node_gyp: string;
 		npm_package_version: string;
 		XPC_SERVICE_NAME: string;
-		SHLVL: string;
 		HOME: string;
+		SHLVL: string;
 		HOMEBREW_PREFIX: string;
 		npm_config_cache: string;
 		LOGNAME: string;
 		npm_lifecycle_script: string;
-		LC_CTYPE: string;
-		SSH_SOCKET_DIR: string;
 		npm_config_user_agent: string;
 		INFOPATH: string;
 		HOMEBREW_CELLAR: string;
-		WARP_CLIENT_VERSION: string;
 		OSLogRateLimit: string;
-		CONDA_CHANGEPS1: string;
 		npm_node_execpath: string;
 		npm_config_prefix: string;
-		COLORTERM: string;
 		NODE_ENV: string;
 		[key: `PUBLIC_${string}`]: undefined;
 		[key: `${string}`]: string | undefined;

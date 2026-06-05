@@ -148,6 +148,15 @@
     margin: 0;
   }
 
+  &__title {
+    font-size: var(--text-sm);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--color-text-muted);
+    margin: 0;
+  }
+
   &__cta {
     width: 100%;
     text-align: center;
@@ -282,4 +291,111 @@
   &__inner {
     @include container(var(--content-wide));
   }
+}
+
+// ---------------------------------------------------------------------------
+// Vista de lección
+// ---------------------------------------------------------------------------
+.lesson-detail {
+  .course-detail__main {
+    gap: var(--space-6);
+  }
+}
+
+.lesson-video {
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  background: var(--color-surface-offset);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-sm);
+  aspect-ratio: 16 / 9;
+
+  iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+}
+
+.lesson-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-4);
+  padding-top: var(--space-2);
+
+  .btn {
+    max-width: min(100%, 320px);
+  }
+
+  @include respond-to('md-down') {
+    flex-direction: column;
+    align-items: stretch;
+
+    .btn {
+      max-width: none;
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
+
+.lesson-index {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.lesson-index__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.lesson-index__item {
+  margin: 0;
+}
+
+.lesson-index__link {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: var(--space-3);
+  align-items: start;
+  width: 100%;
+  padding: var(--space-3) var(--space-4);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+  color: var(--color-text);
+  text-decoration: none;
+  transition:
+    border-color var(--transition-interactive),
+    background-color var(--transition-interactive),
+    color var(--transition-interactive),
+    transform var(--transition-interactive);
+
+  &:hover {
+    border-color: var(--color-primary);
+    background: var(--color-surface-2);
+    color: var(--color-primary-hover);
+    transform: translateY(-1px);
+  }
+
+  &--active,
+  &[aria-current='page'] {
+    border-color: var(--color-primary);
+    background: var(--color-primary-highlight);
+    color: var(--color-text);
+    font-weight: 600;
+  }
+}
+
+.lesson-index__order {
+  color: var(--color-text-muted);
+  font-size: var(--text-sm);
+  font-variant-numeric: tabular-nums;
 }

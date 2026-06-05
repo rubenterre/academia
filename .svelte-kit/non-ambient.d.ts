@@ -29,16 +29,20 @@ declare module "$app/types" {
 	type MatcherParam<M> = M extends (param : string) => param is (infer U extends string) ? U : string;
 
 	export interface AppTypes {
-		RouteId(): "/" | "/cursos" | "/cursos/[slug]";
+		RouteId(): "/" | "/cursos" | "/cursos/[slug]" | "/cursos/[slug]/lecciones" | "/cursos/[slug]/lecciones/[lessonSlug]";
 		RouteParams(): {
-			"/cursos/[slug]": { slug: string }
+			"/cursos/[slug]": { slug: string };
+			"/cursos/[slug]/lecciones": { slug: string };
+			"/cursos/[slug]/lecciones/[lessonSlug]": { slug: string; lessonSlug: string }
 		};
 		LayoutParams(): {
-			"/": { slug?: string | undefined };
-			"/cursos": { slug?: string | undefined };
-			"/cursos/[slug]": { slug: string }
+			"/": { slug?: string | undefined; lessonSlug?: string | undefined };
+			"/cursos": { slug?: string | undefined; lessonSlug?: string | undefined };
+			"/cursos/[slug]": { slug: string; lessonSlug?: string | undefined };
+			"/cursos/[slug]/lecciones": { slug: string; lessonSlug?: string | undefined };
+			"/cursos/[slug]/lecciones/[lessonSlug]": { slug: string; lessonSlug: string }
 		};
-		Pathname(): "/" | "/cursos" | `/cursos/${string}` & {};
+		Pathname(): "/" | "/cursos" | `/cursos/${string}` & {} | `/cursos/${string}/lecciones/${string}` & {};
 		ResolvedPathname(): `${"" | `/${string}`}${ReturnType<AppTypes['Pathname']>}`;
 		Asset(): "/.DS_Store" | "/fonts/JetBrainsMono-VariableFont_wght.ttf" | "/fonts/JetBrainsMono-VariableFont_wght.woff2" | "/fonts/Poppins-Bold.ttf" | "/fonts/Poppins-Bold.woff2" | "/fonts/Poppins-Medium.ttf" | "/fonts/Poppins-Medium.woff2" | "/fonts/Poppins-Regular.ttf" | "/fonts/Poppins-Regular.woff2" | "/fonts/Sora-VariableFont_wght.ttf" | "/fonts/Sora-VariableFont_wght.woff2" | "/robots.txt" | string & {};
 	}
