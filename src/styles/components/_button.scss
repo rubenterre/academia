@@ -29,7 +29,7 @@
     color: var(--color-text-inverse);
     border-color: var(--color-primary);
 
-    &:hover  { background: var(--color-primary-hover); border-color: var(--color-primary-hover);color: var(--color-primary-highlight);}
+    &:hover  { color: var(--color-primary-highlight);}
     &:active { background: var(--color-primary-active); }
   }
 
