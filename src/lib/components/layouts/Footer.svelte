@@ -8,7 +8,7 @@
 	const enlacesUtiles = [
 		{ label: 'Inicio', href: '/' },
 		{ label: 'Cursos', href: '/cursos' },
-		{ label: 'Sobre mí', href: '/sobre-mi' },
+		{ label: 'El Proyecto', href: '/proyecto' },
 		{ label: 'Contacto', href: 'https://rubenterre.me' }
 	];
 

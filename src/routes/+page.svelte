@@ -33,16 +33,8 @@
 		</div>
 
 		<div class="hero__visual" aria-hidden="true">
-			<!-- <div class="hero__code-block">
-				<pre><code><span class="code-keyword">import</span> <span class="code-brace">&#123;</span> <span class="code-var">getCursos</span> <span class="code-brace">&#125;</span> <span class="code-keyword">from</span> <span class="code-string">'$lib/content'</span>;
-
-<span class="code-keyword">export const</span> <span class="code-fn">load</span> = <span class="code-keyword">async</span> () <span class="code-keyword">=&gt;</span> <span class="code-brace">&#123;</span>
-  <span class="code-keyword">const</span> cursos = <span class="code-keyword">await</span> <span class="code-fn">getCursos</span>();
-  <span class="code-keyword">return</span> <span class="code-brace">&#123;</span> cursos <span class="code-brace">&#125;</span>;
-<span class="code-brace">&#125;</span>;</code></pre>
-			</div> -->
 			<div class="hero__picture">
-				<img src={cosmonauta} alt="Imagen de cosmonauta con ordenador portátil">
+				<img src={cosmonauta} alt="Imagen de cosmonauta con ordenador portátil" width="480" height="480" loading="eager">
 			</div>
 		</div>
 	</div>
