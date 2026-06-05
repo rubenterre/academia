@@ -1,0 +1,320 @@
+{
+  ".svelte-kit/generated/server/internal.js": {
+    "file": "internal.js",
+    "name": "internal",
+    "src": ".svelte-kit/generated/server/internal.js",
+    "isEntry": true,
+    "imports": [
+      "_internal2.js",
+      "_internal.js"
+    ]
+  },
+  "_02-crear-el-primer-proyecto.js": {
+    "file": "chunks/02-crear-el-primer-proyecto.js",
+    "name": "02-crear-el-primer-proyecto",
+    "imports": [
+      "_chunk.js",
+      "_dev.js"
+    ]
+  },
+  "_BuyMeCoffee.BPmzZWEs.css": {
+    "file": "_app/immutable/assets/BuyMeCoffee.BPmzZWEs.css",
+    "src": "_BuyMeCoffee.BPmzZWEs.css"
+  },
+  "_BuyMeCoffee.js": {
+    "file": "chunks/BuyMeCoffee.js",
+    "name": "BuyMeCoffee",
+    "imports": [
+      "_dev.js"
+    ],
+    "css": [
+      "_app/immutable/assets/BuyMeCoffee.BPmzZWEs.css"
+    ]
+  },
+  "_CourseCard.js": {
+    "file": "chunks/CourseCard.js",
+    "name": "CourseCard",
+    "imports": [
+      "_dev.js"
+    ]
+  },
+  "_chunk.js": {
+    "file": "chunks/chunk.js",
+    "name": "chunk"
+  },
+  "_client.js": {
+    "file": "chunks/client.js",
+    "name": "client",
+    "imports": [
+      "_internal2.js",
+      "_internal.js",
+      "_exports.js",
+      "_shared.js",
+      "_dev.js"
+    ]
+  },
+  "_cursos.js": {
+    "file": "chunks/cursos.js",
+    "name": "cursos",
+    "imports": [
+      "_sveltekit-para-principiantes.js"
+    ]
+  },
+  "_dev.js": {
+    "file": "chunks/dev.js",
+    "name": "dev"
+  },
+  "_exports.js": {
+    "file": "chunks/exports.js",
+    "name": "exports",
+    "imports": [
+      "_dev.js"
+    ]
+  },
+  "_internal.js": {
+    "file": "chunks/internal.js",
+    "name": "internal",
+    "imports": [
+      "_chunk.js",
+      "_dev.js"
+    ]
+  },
+  "_internal2.js": {
+    "file": "chunks/internal2.js",
+    "name": "internal",
+    "imports": [
+      "_internal.js",
+      "_dev.js"
+    ]
+  },
+  "_shared.js": {
+    "file": "chunks/shared.js",
+    "name": "shared",
+    "imports": [
+      "_internal.js"
+    ]
+  },
+  "_sveltekit-para-principiantes.js": {
+    "file": "chunks/sveltekit-para-principiantes.js",
+    "name": "sveltekit-para-principiantes",
+    "imports": [
+      "_chunk.js",
+      "_dev.js"
+    ]
+  },
+  "_utils.js": {
+    "file": "chunks/utils.js",
+    "name": "utils",
+    "imports": [
+      "_shared.js"
+    ]
+  },
+  "node_modules/@sveltejs/kit/src/runtime/app/server/remote/index.js": {
+    "file": "remote-entry.js",
+    "name": "remote-entry",
+    "src": "node_modules/@sveltejs/kit/src/runtime/app/server/remote/index.js",
+    "isEntry": true,
+    "imports": [
+      "_utils.js",
+      "_internal.js",
+      "_shared.js"
+    ]
+  },
+  "node_modules/@sveltejs/kit/src/runtime/components/svelte-5/error.svelte": {
+    "file": "entries/fallbacks/error.svelte.js",
+    "name": "entries/fallbacks/error.svelte",
+    "src": "node_modules/@sveltejs/kit/src/runtime/components/svelte-5/error.svelte",
+    "isEntry": true,
+    "imports": [
+      "_internal.js",
+      "_client.js",
+      "_dev.js"
+    ]
+  },
+  "node_modules/@sveltejs/kit/src/runtime/server/index.js": {
+    "file": "index.js",
+    "name": "index",
+    "src": "node_modules/@sveltejs/kit/src/runtime/server/index.js",
+    "isEntry": true,
+    "imports": [
+      "_internal2.js",
+      "_utils.js",
+      "_internal.js",
+      "_exports.js",
+      "_shared.js",
+      "_dev.js"
+    ]
+  },
+  "src/lib/assets/icons/sass_icon.svg": {
+    "file": "_app/immutable/assets/sass_icon.D2SeJGAU.svg",
+    "src": "src/lib/assets/icons/sass_icon.svg"
+  },
+  "src/lib/assets/images/cosmonauta_green_alpha2.avif": {
+    "file": "_app/immutable/assets/cosmonauta_green_alpha2.Bi6w8plD.avif",
+    "src": "src/lib/assets/images/cosmonauta_green_alpha2.avif"
+  },
+  "src/lib/assets/images/cosmonauta_proyecto.avif": {
+    "file": "_app/immutable/assets/cosmonauta_proyecto.CBB2pfvJ.avif",
+    "src": "src/lib/assets/images/cosmonauta_proyecto.avif"
+  },
+  "src/lib/assets/images/ruben_terre_avatar.png": {
+    "file": "_app/immutable/assets/ruben_terre_avatar.DPoc5s2T.png",
+    "src": "src/lib/assets/images/ruben_terre_avatar.png"
+  },
+  "src/routes/+layout.svelte": {
+    "file": "entries/pages/_layout.svelte.js",
+    "name": "entries/pages/_layout.svelte",
+    "src": "src/routes/+layout.svelte",
+    "isEntry": true,
+    "imports": [
+      "_internal.js",
+      "_client.js",
+      "_dev.js",
+      "_BuyMeCoffee.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_layout.BwTnj6fw.css"
+    ]
+  },
+  "src/routes/+page.server.ts": {
+    "file": "entries/pages/_page.server.ts.js",
+    "name": "entries/pages/_page.server.ts",
+    "src": "src/routes/+page.server.ts",
+    "isEntry": true,
+    "imports": [
+      "_cursos.js"
+    ]
+  },
+  "src/routes/+page.svelte": {
+    "file": "entries/pages/_page.svelte.js",
+    "name": "entries/pages/_page.svelte",
+    "src": "src/routes/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_dev.js",
+      "_CourseCard.js"
+    ],
+    "assets": [
+      "_app/immutable/assets/cosmonauta_green_alpha2.Bi6w8plD.avif"
+    ]
+  },
+  "src/routes/aviso-legal/+page.svelte": {
+    "file": "entries/pages/aviso-legal/_page.svelte.js",
+    "name": "entries/pages/aviso-legal/_page.svelte",
+    "src": "src/routes/aviso-legal/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_dev.js"
+    ]
+  },
+  "src/routes/cookies/+page.svelte": {
+    "file": "entries/pages/cookies/_page.svelte.js",
+    "name": "entries/pages/cookies/_page.svelte",
+    "src": "src/routes/cookies/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_dev.js"
+    ]
+  },
+  "src/routes/cursos/+page.server.ts": {
+    "file": "entries/pages/cursos/_page.server.ts.js",
+    "name": "entries/pages/cursos/_page.server.ts",
+    "src": "src/routes/cursos/+page.server.ts",
+    "isEntry": true,
+    "imports": [
+      "_cursos.js"
+    ]
+  },
+  "src/routes/cursos/+page.svelte": {
+    "file": "entries/pages/cursos/_page.svelte.js",
+    "name": "entries/pages/cursos/_page.svelte",
+    "src": "src/routes/cursos/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_dev.js",
+      "_CourseCard.js"
+    ]
+  },
+  "src/routes/cursos/[slug]/+page.server.ts": {
+    "file": "entries/pages/cursos/_slug_/_page.server.ts.js",
+    "name": "entries/pages/cursos/_slug_/_page.server.ts",
+    "src": "src/routes/cursos/[slug]/+page.server.ts",
+    "isEntry": true,
+    "imports": [
+      "_sveltekit-para-principiantes.js",
+      "_02-crear-el-primer-proyecto.js",
+      "_cursos.js"
+    ]
+  },
+  "src/routes/cursos/[slug]/+page.svelte": {
+    "file": "entries/pages/cursos/_slug_/_page.svelte.js",
+    "name": "entries/pages/cursos/_slug_/_page.svelte",
+    "src": "src/routes/cursos/[slug]/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_dev.js",
+      "_CourseCard.js"
+    ]
+  },
+  "src/routes/cursos/[slug]/+page.ts": {
+    "file": "entries/pages/cursos/_slug_/_page.ts.js",
+    "name": "entries/pages/cursos/_slug_/_page.ts",
+    "src": "src/routes/cursos/[slug]/+page.ts",
+    "isEntry": true,
+    "imports": [
+      "_sveltekit-para-principiantes.js"
+    ]
+  },
+  "src/routes/cursos/[slug]/lecciones/[lessonSlug]/+page.server.ts": {
+    "file": "entries/pages/cursos/_slug_/lecciones/_lessonSlug_/_page.server.ts.js",
+    "name": "entries/pages/cursos/_slug_/lecciones/_lessonSlug_/_page.server.ts",
+    "src": "src/routes/cursos/[slug]/lecciones/[lessonSlug]/+page.server.ts",
+    "isEntry": true,
+    "imports": [
+      "_02-crear-el-primer-proyecto.js",
+      "_cursos.js"
+    ]
+  },
+  "src/routes/cursos/[slug]/lecciones/[lessonSlug]/+page.svelte": {
+    "file": "entries/pages/cursos/_slug_/lecciones/_lessonSlug_/_page.svelte.js",
+    "name": "entries/pages/cursos/_slug_/lecciones/_lessonSlug_/_page.svelte",
+    "src": "src/routes/cursos/[slug]/lecciones/[lessonSlug]/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_dev.js",
+      "_BuyMeCoffee.js"
+    ]
+  },
+  "src/routes/cursos/[slug]/lecciones/[lessonSlug]/+page.ts": {
+    "file": "entries/pages/cursos/_slug_/lecciones/_lessonSlug_/_page.ts.js",
+    "name": "entries/pages/cursos/_slug_/lecciones/_lessonSlug_/_page.ts",
+    "src": "src/routes/cursos/[slug]/lecciones/[lessonSlug]/+page.ts",
+    "isEntry": true,
+    "imports": [
+      "_02-crear-el-primer-proyecto.js"
+    ]
+  },
+  "src/routes/privacidad/+page.svelte": {
+    "file": "entries/pages/privacidad/_page.svelte.js",
+    "name": "entries/pages/privacidad/_page.svelte",
+    "src": "src/routes/privacidad/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_dev.js"
+    ]
+  },
+  "src/routes/proyecto/+page.svelte": {
+    "file": "entries/pages/proyecto/_page.svelte.js",
+    "name": "entries/pages/proyecto/_page.svelte",
+    "src": "src/routes/proyecto/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_dev.js"
+    ],
+    "assets": [
+      "_app/immutable/assets/cosmonauta_proyecto.CBB2pfvJ.avif",
+      "_app/immutable/assets/ruben_terre_avatar.DPoc5s2T.png",
+      "_app/immutable/assets/sass_icon.D2SeJGAU.svg"
+    ]
+  }
+}

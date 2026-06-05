@@ -1,0 +1,44 @@
+# =============================================================================
+# netlify.toml — Configuración de despliegue para Academia Rubén Terre
+# =============================================================================
+
+[build]
+  command   = "npm run build"
+  publish   = ".svelte-kit/output/client"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+# ---------------------------------------------------------------------------
+# Funciones serverless (SSR con adapter-netlify)
+# ---------------------------------------------------------------------------
+[functions]
+  directory          = ".netlify/functions-internal"
+  included_files     = [".svelte-kit/output/server/**"]
+  node_bundler       = "esbuild"
+
+# ---------------------------------------------------------------------------
+# Headers
+# ---------------------------------------------------------------------------
+
+# Assets con hash en el nombre → inmutables, caché 1 año
+[[headers]]
+  for = "/_app/immutable/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Fuentes estáticas
+[[headers]]
+  for = "/fonts/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# HTML y respuestas SSR → sin caché (contenido dinámico)
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Cache-Control        = "public, max-age=0, must-revalidate"
+    X-Frame-Options      = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy      = "strict-origin-when-cross-origin"
+    Permissions-Policy   = "camera=(), microphone=(), geolocation=()"

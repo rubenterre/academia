@@ -1,6 +1,6 @@
 <script lang="ts">
 	import cosmonauta from '$lib/assets/images/cosmonauta_proyecto.avif';
-	import avatarImg from '$lib/assets/images/ruben_terre_avatar.png';
+	import avatarImg from '$lib/assets/images/ruben_terre_avatar.avif';
 	import sveltekitLogo from '$lib/assets/icons/svelte_icon.svg';
 	import sassLogo from '$lib/assets/icons/sass_icon.svg';
 	import htmlLogo from '$lib/assets/icons/html5_icon.svg';
