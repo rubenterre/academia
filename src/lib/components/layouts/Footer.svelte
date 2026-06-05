@@ -100,7 +100,7 @@
 		<div class="footer__container">
 			<div class="footer__bar-inner">
 				<p class="footer__copy">
-					&copy; {year} Academia &mdash; <a href="https://www.youtube.com/@rubenterre" target="_blank" rel="noopener noreferrer" class="footer__copy-link">Rubén Terre</a>
+					&copy; {year} Academia &mdash; <a href="https://rubenterre.me" target="_blank" rel="noopener noreferrer" class="footer__copy-link">Rubén Terre</a>
 				</p>
 				<ul class="footer__legal-links" aria-label="Páginas legales">
 					{#each enlacesLegales as enlace}

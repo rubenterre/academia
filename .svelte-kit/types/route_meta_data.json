@@ -2,6 +2,8 @@
 	"/": [
 		"src/routes/+page.server.ts"
 	],
+	"/aviso-legal": [],
+	"/cookies": [],
 	"/cursos": [
 		"src/routes/cursos/+page.server.ts"
 	],
@@ -13,5 +15,6 @@
 		"src/routes/cursos/[slug]/lecciones/[lessonSlug]/+page.ts",
 		"src/routes/cursos/[slug]/lecciones/[lessonSlug]/+page.server.ts"
 	],
+	"/privacidad": [],
 	"/proyecto": []
 }

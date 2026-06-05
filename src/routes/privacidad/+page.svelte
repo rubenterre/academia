@@ -1,0 +1,177 @@
+<script lang="ts">
+	const ultimaActualizacion = '5 de junio de 2026';
+	const nombreResponsable = 'Rubén Arturo Terre Lameiro';
+	const email = 'info@rubenterre.com';
+	const web = 'https://academia.rubenterre.me';
+	const domicilio = 'Santiago de Compostela, A Coruña, España';
+</script>
+
+<svelte:head>
+	<title>Política de Privacidad — Academia Rubén Terre</title>
+	<meta name="description" content="Consulta cómo tratamos tus datos personales en Academia Rubén Terre, de acuerdo con el RGPD y la LOPDGDD." />
+	<meta name="robots" content="noindex, follow" />
+</svelte:head>
+
+<main class="legal-page">
+	<div class="legal-page__container">
+
+		<!-- Header -->
+		<header class="legal-header">
+			<p class="legal-header__tag">Información legal</p>
+			<h1 class="legal-header__title">Política de Privacidad</h1>
+			<p class="legal-header__meta">Última actualización: <time datetime="2026-06-05">{ultimaActualizacion}</time></p>
+		</header>
+
+		<!-- Contenido -->
+		<div class="legal-body">
+
+			<!-- 1. Responsable -->
+			<section class="legal-section">
+				<h2 class="legal-section__title">1. Responsable del tratamiento</h2>
+				<p>En cumplimiento del Reglamento (UE) 2016/679 del Parlamento Europeo y del Consejo (RGPD) y de la Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales (LOPDGDD), se informa de que el responsable del tratamiento de los datos personales recabados a través de este sitio web es:</p>
+				<dl class="legal-dl">
+					<div class="legal-dl__row">
+						<dt>Responsable</dt>
+						<dd>{nombreResponsable}</dd>
+					</div>
+					<div class="legal-dl__row">
+						<dt>Domicilio</dt>
+						<dd>{domicilio}</dd>
+					</div>
+					<div class="legal-dl__row">
+						<dt>Correo electrónico</dt>
+						<dd><a href="mailto:{email}" class="legal-link">{email}</a></dd>
+					</div>
+					<div class="legal-dl__row">
+						<dt>Sitio web</dt>
+						<dd><a href={web} class="legal-link" target="_blank" rel="noopener noreferrer">{web}</a></dd>
+					</div>
+				</dl>
+			</section>
+
+			<!-- 2. Datos recabados -->
+			<section class="legal-section">
+				<h2 class="legal-section__title">2. Datos personales que tratamos</h2>
+				<p>Dependiendo de la interacción que mantengas con el Sitio, podemos tratar las siguientes categorías de datos:</p>
+				<ul class="legal-list">
+					<li><strong>Datos de registro:</strong> nombre, dirección de correo electrónico y contraseña (almacenada cifrada) para la creación y gestión de tu cuenta.</li>
+					<li><strong>Datos de pago:</strong> información de facturación necesaria para procesar la compra de cursos. Los datos de tarjeta son gestionados íntegramente por Stripe y nunca son almacenados en nuestros servidores.</li>
+					<li><strong>Datos de navegación:</strong> dirección IP, tipo de navegador, páginas visitadas y tiempo de permanencia, recabados mediante cookies analíticas (ver <a href="/cookies" class="legal-link">Política de Cookies</a>).</li>
+					<li><strong>Datos de progreso:</strong> lecciones completadas, puntuaciones y actividad dentro de los cursos, para ofrecer una experiencia de aprendizaje personalizada.</li>
+					<li><strong>Comunicaciones:</strong> contenido de los mensajes que nos envías a través del formulario de contacto o por correo electrónico.</li>
+				</ul>
+			</section>
+
+			<!-- 3. Finalidades y base legitimadora -->
+			<section class="legal-section">
+				<h2 class="legal-section__title">3. Finalidades del tratamiento y base legitimadora</h2>
+				<p>Tratamos tus datos con las siguientes finalidades y sus correspondientes bases jurídicas:</p>
+				<dl class="legal-dl">
+					<div class="legal-dl__row">
+						<dt>Gestión de cuenta</dt>
+						<dd>Ejecución de un contrato (art. 6.1.b RGPD)</dd>
+					</div>
+					<div class="legal-dl__row">
+						<dt>Procesamiento de pagos</dt>
+						<dd>Ejecución de un contrato (art. 6.1.b RGPD)</dd>
+					</div>
+					<div class="legal-dl__row">
+						<dt>Análisis de uso del Sitio</dt>
+						<dd>Interés legítimo (art. 6.1.f RGPD) y, en su caso, consentimiento</dd>
+					</div>
+					<div class="legal-dl__row">
+						<dt>Envío de comunicaciones</dt>
+						<dd>Consentimiento expreso (art. 6.1.a RGPD)</dd>
+					</div>
+					<div class="legal-dl__row">
+						<dt>Atención al usuario</dt>
+						<dd>Interés legítimo (art. 6.1.f RGPD)</dd>
+					</div>
+					<div class="legal-dl__row">
+						<dt>Cumplimiento legal</dt>
+						<dd>Obligación legal (art. 6.1.c RGPD)</dd>
+					</div>
+				</dl>
+			</section>
+
+			<!-- 4. Destinatarios -->
+			<section class="legal-section">
+				<h2 class="legal-section__title">4. Destinatarios y encargados del tratamiento</h2>
+				<p>No cedemos tus datos a terceros salvo obligación legal. No obstante, para prestar el servicio contamos con los siguientes encargados del tratamiento, todos ellos con garantías adecuadas conforme al RGPD:</p>
+				<ul class="legal-list">
+					<li><strong>PocketBase / proveedor de infraestructura:</strong> almacenamiento de datos de cuenta y progreso en cursos.</li>
+					<li><strong>Stripe, Inc.:</strong> procesamiento seguro de pagos. Consulta su <a href="https://stripe.com/es/privacy" class="legal-link" target="_blank" rel="noopener noreferrer">política de privacidad</a>.</li>
+					<li><strong>Proveedor de hosting:</strong> alojamiento del sitio web y sus contenidos.</li>
+					<li><strong>Herramienta de análisis web:</strong> recogida de datos agregados y anónimos de navegación (si el usuario presta su consentimiento a través del banner de cookies).</li>
+				</ul>
+			</section>
+
+			<!-- 5. Transferencias internacionales -->
+			<section class="legal-section">
+				<h2 class="legal-section__title">5. Transferencias internacionales</h2>
+				<p>Algunos de nuestros encargados del tratamiento (como Stripe) pueden estar ubicados fuera del Espacio Económico Europeo. En tales casos, las transferencias se realizan bajo las garantías previstas en el artículo 46 del RGPD (cláusulas contractuales tipo aprobadas por la Comisión Europea) o porque la Comisión ha adoptado una decisión de adecuación respecto del país de destino.</p>
+			</section>
+
+			<!-- 6. Plazo de conservación -->
+			<section class="legal-section">
+				<h2 class="legal-section__title">6. Plazo de conservación</h2>
+				<p>Conservamos tus datos durante el tiempo estrictamente necesario para la finalidad que motivó su recogida y, en todo caso, durante los plazos legalmente exigidos:</p>
+				<ul class="legal-list">
+					<li><strong>Datos de cuenta:</strong> mientras la cuenta esté activa y, tras su cancelación, durante 3 años para atender posibles reclamaciones.</li>
+					<li><strong>Datos de facturación:</strong> 5 años, en cumplimiento de la normativa tributaria.</li>
+					<li><strong>Comunicaciones y consultas:</strong> 1 año desde la última interacción.</li>
+					<li><strong>Datos analíticos:</strong> el período establecido en la configuración de la herramienta de análisis, con un máximo de 26 meses.</li>
+				</ul>
+			</section>
+
+			<!-- 7. Derechos -->
+			<section class="legal-section">
+				<h2 class="legal-section__title">7. Tus derechos</h2>
+				<p>En virtud del RGPD y la LOPDGDD, puedes ejercer en cualquier momento los siguientes derechos frente al responsable del tratamiento:</p>
+				<ul class="legal-list">
+					<li><strong>Acceso:</strong> conocer qué datos personales tuyos estamos tratando.</li>
+					<li><strong>Rectificación:</strong> corregir datos inexactos o incompletos.</li>
+					<li><strong>Supresión («derecho al olvido»):</strong> solicitar la eliminación de tus datos cuando ya no sean necesarios.</li>
+					<li><strong>Limitación:</strong> solicitar que suspendamos temporalmente el tratamiento de tus datos.</li>
+					<li><strong>Portabilidad:</strong> recibir tus datos en formato estructurado y de uso común.</li>
+					<li><strong>Oposición:</strong> oponerte al tratamiento basado en interés legítimo o con fines de marketing directo.</li>
+					<li><strong>Retirada del consentimiento:</strong> en cualquier momento, sin que ello afecte a la licitud del tratamiento previo.</li>
+				</ul>
+				<p>Para ejercer cualquiera de estos derechos, envía un correo a <a href="mailto:{email}" class="legal-link">{email}</a> con el asunto «Ejercicio de derechos RGPD» e indica el derecho que deseas ejercer junto con una copia de tu documento de identidad. Respondemos en un plazo máximo de <strong>30 días</strong>.</p>
+				<p>Si consideras que el tratamiento no se ajusta a la normativa vigente, tienes derecho a presentar una reclamación ante la <a href="https://www.aepd.es" class="legal-link" target="_blank" rel="noopener noreferrer">Agencia Española de Protección de Datos (AEPD)</a>.</p>
+			</section>
+
+			<!-- 8. Seguridad -->
+			<section class="legal-section">
+				<h2 class="legal-section__title">8. Medidas de seguridad</h2>
+				<p>Aplicamos medidas técnicas y organizativas apropiadas para garantizar un nivel de seguridad adecuado al riesgo, incluyendo cifrado de contraseñas, transmisión de datos mediante HTTPS y acceso restringido a la información personal. No obstante, ninguna transmisión por Internet es completamente segura, por lo que no podemos garantizar la seguridad absoluta de los datos.</p>
+			</section>
+
+			<!-- 9. Menores -->
+			<section class="legal-section">
+				<h2 class="legal-section__title">9. Menores de edad</h2>
+				<p>El Sitio está dirigido a mayores de 16 años. No recabamos conscientemente datos de menores de esa edad. Si detectamos o se nos notifica que hemos recopilado datos de un menor sin el consentimiento verificable de su tutor legal, procederemos a eliminarlos de forma inmediata.</p>
+			</section>
+
+			<!-- 10. Cambios -->
+			<section class="legal-section">
+				<h2 class="legal-section__title">10. Actualizaciones de esta política</h2>
+				<p>Podemos actualizar esta Política de Privacidad para adaptarla a cambios legislativos, jurisprudenciales o de nuestros servicios. La fecha de última actualización aparece al inicio del documento. Te recomendamos revisarla periódicamente. El uso continuado del Sitio tras la publicación de cambios significativos implicará tu aceptación de la nueva versión.</p>
+			</section>
+
+			<!-- Bloque de contacto -->
+			<aside class="legal-contact">
+				<div class="legal-contact__icon" aria-hidden="true">
+					<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+						<path d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
+					</svg>
+				</div>
+				<div class="legal-contact__body">
+					<p class="legal-contact__title">¿Alguna pregunta sobre tus datos?</p>
+					<p class="legal-contact__desc">Escríbenos a <a href="mailto:{email}" class="legal-link">{email}</a> con el asunto «Privacidad» y te respondemos en un plazo máximo de 30 días.</p>
+				</div>
+			</aside>
+
+		</div>
+	</div>
+</main>

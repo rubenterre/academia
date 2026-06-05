@@ -1,7 +1,7 @@
 <script lang="ts">
 	import type { PageData } from './$types';
 	import CourseCard from '$lib/components/CourseCard.svelte';
-	import cosmonauta from '$lib/assets/images/cosmonauta_green_alpha.avif'
+	import cosmonauta from '$lib/assets/images/cosmonauta_green_alpha2.avif'
 
 	let { data }: { data: PageData } = $props();
 	const { cursosDestacados } = data;

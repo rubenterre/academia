@@ -122,7 +122,7 @@
 </section>
 
 <!-- CÓMO ESTÁ CONSTRUIDA -->
-<section class="proyecto-section proyecto-section--alt">
+<section class="proyecto-section proyecto-section--alt" id="principios">
 	<div class="proyecto-section__inner">
 		<div class="proyecto-built">
 			<div class="proyecto-built__copy">
