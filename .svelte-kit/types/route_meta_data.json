@@ -12,5 +12,6 @@
 	"/cursos/[slug]/lecciones/[lessonSlug]": [
 		"src/routes/cursos/[slug]/lecciones/[lessonSlug]/+page.ts",
 		"src/routes/cursos/[slug]/lecciones/[lessonSlug]/+page.server.ts"
-	]
+	],
+	"/proyecto": []
 }

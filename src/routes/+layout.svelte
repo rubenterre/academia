@@ -17,7 +17,7 @@
 		src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
 		data-id="rubenterre"
 		data-description="Support me on Buy me a coffee!"
-		data-message="¡Muchas gracias por apoyarme!"
+		data-message="¿Me invitas a un café?"
 		data-color="#40DCA5"
 		data-position="Right"
 		data-x_margin="18"

@@ -4,10 +4,10 @@
 
 	// Navegación principal
 	const navLinks = [
-		{ label: 'Inicio',   href: '/' },
-		{ label: 'Cursos',   href: '/cursos' },
-		{ label: 'Sobre mí', href: '/sobre-mi' },
-		{ label: 'Contacto',     href: '/contacto' }
+		{ label: 'Inicio',      href: '/',                      externo: false },
+		{ label: 'Cursos',      href: '/cursos',                externo: false },
+		{ label: 'El proyecto', href: '/proyecto',              externo: false },
+		{ label: 'Contacto',    href: 'https://rubenterre.me', externo: true  }
 	];
 
 	// Estado menú móvil
@@ -47,6 +47,8 @@
 							class="nav__link"
 							class:is-active={isActive(link.href)}
 							aria-current={isActive(link.href) ? 'page' : undefined}
+							target={link.externo ? '_blank' : undefined}
+							rel={link.externo ? 'noopener noreferrer' : undefined}
 						>
 							{link.label}
 						</a>
@@ -100,6 +102,8 @@
 						class="nav__link"
 						class:is-active={isActive(link.href)}
 						aria-current={isActive(link.href) ? 'page' : undefined}
+						target={link.externo ? '_blank' : undefined}
+						rel={link.externo ? 'noopener noreferrer' : undefined}
 						onclick={closeMobile}
 					>
 						{link.label}

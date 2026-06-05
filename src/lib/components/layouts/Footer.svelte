@@ -9,7 +9,7 @@
 		{ label: 'Inicio', href: '/' },
 		{ label: 'Cursos', href: '/cursos' },
 		{ label: 'Sobre mí', href: '/sobre-mi' },
-		{ label: 'Blog', href: '/blog' }
+		{ label: 'Contacto', href: 'https://rubenterre.me' }
 	];
 
 	const enlacesLegales = [
