@@ -6,9 +6,11 @@
 		"src/routes/cursos/+page.server.ts"
 	],
 	"/cursos/[slug]": [
+		"src/routes/cursos/[slug]/+page.ts",
 		"src/routes/cursos/[slug]/+page.server.ts"
 	],
 	"/cursos/[slug]/lecciones/[lessonSlug]": [
+		"src/routes/cursos/[slug]/lecciones/[lessonSlug]/+page.ts",
 		"src/routes/cursos/[slug]/lecciones/[lessonSlug]/+page.server.ts"
 	]
 }

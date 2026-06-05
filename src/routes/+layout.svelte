@@ -9,11 +9,20 @@
 
 <svelte:head>
 	<link rel="icon" href={favicon} />
-	<!-- Fuentes: Cabinet Grotesk (display) + Satoshi (body) via Fontshare -->
-	<link
-		href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@700,800&f[]=satoshi@400,500,600,700&display=swap"
-		rel="stylesheet"
-	/>
+	<!-- BMC Website Widget — flotante en toda la web -->
+	<!-- svelte-ignore -->
+	{@html `<script
+		data-name="BMC-Widget"
+		data-cfasync="false"
+		src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
+		data-id="rubenterre"
+		data-description="Support me on Buy me a coffee!"
+		data-message="¡Muchas gracias por apoyarme!"
+		data-color="#40DCA5"
+		data-position="Right"
+		data-x_margin="18"
+		data-y_margin="18"
+	><\/script>`}
 </svelte:head>
 
 <Navbar />

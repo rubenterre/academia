@@ -4,7 +4,7 @@ slug: "01-que-es-sveltekit"
 curso: "sveltekit-para-principiantes"
 orden: 1
 duracion: "12 min"
-video_youtube: "dQw4w9WgXcQ"
+video_youtube: "02JynP1ZKzY"
 publicado: true
 ---
 

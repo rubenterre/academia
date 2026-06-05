@@ -3,7 +3,11 @@
 	import CourseCard from '$lib/components/CourseCard.svelte';
 
 	let { data }: { data: PageData } = $props();
-	const { curso, contenido: Contenido, relacionados, leccionesCurso } = data;
+
+	const curso          = $derived(data.curso);
+	const Contenido      = $derived(data.contenido as any);
+	const relacionados   = $derived(data.relacionados);
+	const leccionesCurso = $derived(data.leccionesCurso);
 
 	const nivelLabel: Record<string, string> = {
 		principiante: 'Principiante',

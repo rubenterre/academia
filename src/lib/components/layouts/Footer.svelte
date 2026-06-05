@@ -1,4 +1,6 @@
 <script lang="ts">
+	import BuyMeCoffee from '$lib/components/BuyMeCoffee.svelte';
+
 	// Año actual reactivo
 	const year = new Date().getFullYear();
 
@@ -58,6 +60,11 @@
 							</li>
 						{/each}
 					</ul>
+
+					<!-- Buy Me a Coffee -->
+					<div class="footer__bmc">
+						<BuyMeCoffee variante="link" />
+					</div>
 				</div>
 
 				<!-- Columna: enlaces útiles -->
