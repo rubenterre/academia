@@ -1,3 +1,18 @@
+# Assets con hash en el nombre → caché inmutable 1 año
+/_app/immutable/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Fuentes estáticas
+/fonts/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# HTML y respuestas SSR → sin caché + cabeceras de seguridad
+/*
+  Cache-Control: public, max-age=0, must-revalidate
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
 
 
 /_app/immutable/*

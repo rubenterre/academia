@@ -1,0 +1,224 @@
+{
+  ".svelte-kit/generated/client-optimized/app.js": {
+    "file": "_app/immutable/entry/app.DAR3IO5O.js",
+    "name": "entry/app",
+    "src": ".svelte-kit/generated/client-optimized/app.js",
+    "isEntry": true,
+    "imports": [
+      "_DGSHIZNz.js",
+      "_kNaey6uv.js",
+      "_xihTtKlq.js"
+    ],
+    "dynamicImports": [
+      ".svelte-kit/generated/client-optimized/nodes/0.js",
+      ".svelte-kit/generated/client-optimized/nodes/1.js",
+      ".svelte-kit/generated/client-optimized/nodes/2.js",
+      ".svelte-kit/generated/client-optimized/nodes/3.js",
+      ".svelte-kit/generated/client-optimized/nodes/4.js",
+      ".svelte-kit/generated/client-optimized/nodes/5.js",
+      ".svelte-kit/generated/client-optimized/nodes/6.js",
+      ".svelte-kit/generated/client-optimized/nodes/7.js",
+      ".svelte-kit/generated/client-optimized/nodes/8.js",
+      ".svelte-kit/generated/client-optimized/nodes/9.js"
+    ]
+  },
+  ".svelte-kit/generated/client-optimized/nodes/0.js": {
+    "file": "_app/immutable/nodes/0.D1_xXX88.js",
+    "name": "nodes/0",
+    "src": ".svelte-kit/generated/client-optimized/nodes/0.js",
+    "isEntry": true,
+    "imports": [
+      "_DGSHIZNz.js",
+      "_B46QgPyY.js",
+      "_xihTtKlq.js",
+      "_CMyZiRnb.js"
+    ],
+    "css": [
+      "_app/immutable/assets/0.BgVprNEz.css"
+    ]
+  },
+  ".svelte-kit/generated/client-optimized/nodes/1.js": {
+    "file": "_app/immutable/nodes/1.BVmiqNZR.js",
+    "name": "nodes/1",
+    "src": ".svelte-kit/generated/client-optimized/nodes/1.js",
+    "isEntry": true,
+    "imports": [
+      "_DGSHIZNz.js",
+      "_B46QgPyY.js",
+      "_xihTtKlq.js"
+    ]
+  },
+  ".svelte-kit/generated/client-optimized/nodes/2.js": {
+    "file": "_app/immutable/nodes/2.Ch8aMQKP.js",
+    "name": "nodes/2",
+    "src": ".svelte-kit/generated/client-optimized/nodes/2.js",
+    "isEntry": true,
+    "imports": [
+      "_DGSHIZNz.js",
+      "_xihTtKlq.js",
+      "_E22oUoyK.js"
+    ],
+    "assets": [
+      "_app/immutable/assets/cosmonauta_green_alpha2.Bi6w8plD.avif"
+    ]
+  },
+  ".svelte-kit/generated/client-optimized/nodes/3.js": {
+    "file": "_app/immutable/nodes/3.CBP-67gv.js",
+    "name": "nodes/3",
+    "src": ".svelte-kit/generated/client-optimized/nodes/3.js",
+    "isEntry": true,
+    "imports": [
+      "_DGSHIZNz.js",
+      "_xihTtKlq.js"
+    ]
+  },
+  ".svelte-kit/generated/client-optimized/nodes/4.js": {
+    "file": "_app/immutable/nodes/4.DywB5-X3.js",
+    "name": "nodes/4",
+    "src": ".svelte-kit/generated/client-optimized/nodes/4.js",
+    "isEntry": true,
+    "imports": [
+      "_DGSHIZNz.js",
+      "_xihTtKlq.js"
+    ]
+  },
+  ".svelte-kit/generated/client-optimized/nodes/5.js": {
+    "file": "_app/immutable/nodes/5.DDucVu3U.js",
+    "name": "nodes/5",
+    "src": ".svelte-kit/generated/client-optimized/nodes/5.js",
+    "isEntry": true,
+    "imports": [
+      "_DGSHIZNz.js",
+      "_xihTtKlq.js",
+      "_E22oUoyK.js"
+    ]
+  },
+  ".svelte-kit/generated/client-optimized/nodes/6.js": {
+    "file": "_app/immutable/nodes/6.Ddn2METp.js",
+    "name": "nodes/6",
+    "src": ".svelte-kit/generated/client-optimized/nodes/6.js",
+    "isEntry": true,
+    "imports": [
+      "_DGSHIZNz.js",
+      "_ClonXZO7.js",
+      "_xihTtKlq.js",
+      "_E22oUoyK.js"
+    ]
+  },
+  ".svelte-kit/generated/client-optimized/nodes/7.js": {
+    "file": "_app/immutable/nodes/7.CVeNSvtx.js",
+    "name": "nodes/7",
+    "src": ".svelte-kit/generated/client-optimized/nodes/7.js",
+    "isEntry": true,
+    "imports": [
+      "_DGSHIZNz.js",
+      "_ClonXZO7.js",
+      "_xihTtKlq.js",
+      "_CMyZiRnb.js"
+    ]
+  },
+  ".svelte-kit/generated/client-optimized/nodes/8.js": {
+    "file": "_app/immutable/nodes/8.DU0Sy99J.js",
+    "name": "nodes/8",
+    "src": ".svelte-kit/generated/client-optimized/nodes/8.js",
+    "isEntry": true,
+    "imports": [
+      "_DGSHIZNz.js",
+      "_xihTtKlq.js"
+    ]
+  },
+  ".svelte-kit/generated/client-optimized/nodes/9.js": {
+    "file": "_app/immutable/nodes/9._ZAPEgGg.js",
+    "name": "nodes/9",
+    "src": ".svelte-kit/generated/client-optimized/nodes/9.js",
+    "isEntry": true,
+    "imports": [
+      "_DGSHIZNz.js",
+      "_xihTtKlq.js"
+    ],
+    "assets": [
+      "_app/immutable/assets/cosmonauta_proyecto.CBB2pfvJ.avif",
+      "_app/immutable/assets/ruben_terre_avatar.D4_gE-Zn.avif",
+      "_app/immutable/assets/sass_icon.D2SeJGAU.svg"
+    ]
+  },
+  "_B46QgPyY.js": {
+    "file": "_app/immutable/chunks/B46QgPyY.js",
+    "name": "client",
+    "imports": [
+      "_DGSHIZNz.js",
+      "_CymRgjIC.js"
+    ]
+  },
+  "_BuyMeCoffee.BPmzZWEs.css": {
+    "file": "_app/immutable/assets/BuyMeCoffee.BPmzZWEs.css",
+    "src": "_BuyMeCoffee.BPmzZWEs.css"
+  },
+  "_CMyZiRnb.js": {
+    "file": "_app/immutable/chunks/CMyZiRnb.js",
+    "name": "BuyMeCoffee",
+    "imports": [
+      "_DGSHIZNz.js",
+      "_xihTtKlq.js"
+    ],
+    "css": [
+      "_app/immutable/assets/BuyMeCoffee.BPmzZWEs.css"
+    ]
+  },
+  "_ClonXZO7.js": {
+    "file": "_app/immutable/chunks/ClonXZO7.js",
+    "name": "exports",
+    "imports": [
+      "_CymRgjIC.js"
+    ]
+  },
+  "_CymRgjIC.js": {
+    "file": "_app/immutable/chunks/CymRgjIC.js",
+    "name": "pathname"
+  },
+  "_DGSHIZNz.js": {
+    "file": "_app/immutable/chunks/DGSHIZNz.js",
+    "name": "index-client"
+  },
+  "_E22oUoyK.js": {
+    "file": "_app/immutable/chunks/E22oUoyK.js",
+    "name": "CourseCard",
+    "imports": [
+      "_DGSHIZNz.js",
+      "_xihTtKlq.js"
+    ]
+  },
+  "_kNaey6uv.js": {
+    "file": "_app/immutable/chunks/kNaey6uv.js",
+    "name": "preload-helper"
+  },
+  "_xihTtKlq.js": {
+    "file": "_app/immutable/chunks/xihTtKlq.js",
+    "name": "disclose-version"
+  },
+  "node_modules/@sveltejs/kit/src/runtime/client/entry.js": {
+    "file": "_app/immutable/entry/start.B3CQ9QK9.js",
+    "name": "entry/start",
+    "src": "node_modules/@sveltejs/kit/src/runtime/client/entry.js",
+    "isEntry": true,
+    "imports": [
+      "_B46QgPyY.js"
+    ]
+  },
+  "src/lib/assets/icons/sass_icon.svg": {
+    "file": "_app/immutable/assets/sass_icon.D2SeJGAU.svg",
+    "src": "src/lib/assets/icons/sass_icon.svg"
+  },
+  "src/lib/assets/images/cosmonauta_green_alpha2.avif": {
+    "file": "_app/immutable/assets/cosmonauta_green_alpha2.Bi6w8plD.avif",
+    "src": "src/lib/assets/images/cosmonauta_green_alpha2.avif"
+  },
+  "src/lib/assets/images/cosmonauta_proyecto.avif": {
+    "file": "_app/immutable/assets/cosmonauta_proyecto.CBB2pfvJ.avif",
+    "src": "src/lib/assets/images/cosmonauta_proyecto.avif"
+  },
+  "src/lib/assets/images/ruben_terre_avatar.avif": {
+    "file": "_app/immutable/assets/ruben_terre_avatar.D4_gE-Zn.avif",
+    "src": "src/lib/assets/images/ruben_terre_avatar.avif"
+  }
+}

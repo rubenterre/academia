@@ -168,7 +168,7 @@ async function tick() {}
 async function settled() {}
 //#endregion
 //#region node_modules/@sveltejs/kit/src/runtime/app/env/internal.js
-var version = "1780688381168";
+var version = "1780689843916";
 var prerendering = false;
 function set_building() {}
 function set_prerendering() {
