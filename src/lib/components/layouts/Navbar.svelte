@@ -5,6 +5,7 @@
 	// Navegación principal
 	const navLinks = [
 		{ label: 'Inicio',      href: '/',                      externo: false },
+		{ label: 'Roadmaps',    href: '/roadmaps',              externo: false },
 		{ label: 'Cursos',      href: '/cursos',                externo: false },
 		{ label: 'El proyecto', href: '/proyecto',              externo: false },
 		{ label: 'Contacto',    href: 'https://rubenterre.me', externo: true  }
@@ -61,8 +62,8 @@
 		<div class="nav__actions">
 
 			<!-- CTA principal (solo desktop) -->
-			<a href="/cursos" class="btn btn--primary nav__cta" aria-label="Ver todos los cursos">
-				Ver cursos
+			<a href="/roadmaps" class="btn btn--primary nav__cta" aria-label="Explorar roadmaps">
+				Explorar roadmaps
 			</a>
 
 			<!-- Hamburguesa (solo móvil) -->
@@ -112,8 +113,8 @@
 			{/each}
 			<!-- CTA en móvil -->
 			<li class="nav__mobile-cta">
-				<a href="/cursos" class="btn btn--primary" onclick={closeMobile}>
-					Ver cursos
+				<a href="/roadmaps" class="btn btn--primary" onclick={closeMobile}>
+					Explorar roadmaps
 				</a>
 			</li>
 		</ul>

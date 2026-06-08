@@ -16,5 +16,16 @@
 		"src/routes/cursos/[slug]/lecciones/[lessonSlug]/+page.server.ts"
 	],
 	"/privacidad": [],
-	"/proyecto": []
+	"/proyecto": [],
+	"/roadmaps": [
+		"src/routes/roadmaps/+page.server.ts"
+	],
+	"/roadmaps/[slug]": [
+		"src/routes/roadmaps/[slug]/+page.ts",
+		"src/routes/roadmaps/[slug]/+page.server.ts"
+	],
+	"/roadmaps/[slug]/[nodo]": [
+		"src/routes/roadmaps/[slug]/[nodo]/+page.ts",
+		"src/routes/roadmaps/[slug]/[nodo]/+page.server.ts"
+	]
 }

@@ -26,11 +26,13 @@
 @use 'components/form';
 @use 'components/progress';
 @use 'components/badge';
+@use 'components/roadmap-tree';
 
 // 7. Pages (estilos específicos de ruta)
 @use 'pages/home';
 @use 'pages/dashboard';
 @use 'pages/cursos';
 @use 'pages/curso-detalle';
+@use 'pages/roadmaps';
 @use 'pages/proyecto';
 @use 'pages/legal';

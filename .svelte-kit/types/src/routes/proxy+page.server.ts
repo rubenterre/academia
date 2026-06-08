@@ -1,9 +1,9 @@
 // @ts-nocheck
-import { getCursosDestacados } from '$lib/content/cursos';
+import { getRoadmapsDestacados } from '$lib/content/roadmaps';
 import type { PageServerLoad } from './$types';
 
 export const load = async () => {
-	const cursosDestacados = await getCursosDestacados(6);
-	return { cursosDestacados };
+	const roadmapsDestacados = await getRoadmapsDestacados(6);
+	return { roadmapsDestacados };
 };
 ;null as any as PageServerLoad;
