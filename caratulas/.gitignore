@@ -1,0 +1,6 @@
+# .gitignore (dentro de caratulas/)
+output/
+node_modules/
+
+# OS System
+.DS_Store

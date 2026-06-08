@@ -5,7 +5,7 @@ descripcion: "Itinerario guiado para aprender las bases del desarrollo frontend 
 nivel: "principiante"
 duracion_estimada: "3–4 meses"
 target_role: "Frontend Developer Junior"
-imagen: "/imagenes/roadmaps/frontend-junior.jpg"
+imagen: "/roadmaps/frontend-developer-junior.png"
 publicado: true
 fecha: 2026-06-08
 autor: "Rubén Terre"

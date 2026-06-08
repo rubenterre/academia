@@ -1,0 +1,24 @@
+[
+  {
+    "output": "clase-01.png",
+    "lesson": "Curso frontend developer junior",
+    "title": ["Frontend","developer", "Junior"],
+    "titleColor": ["white","white","green"],
+    "bgImage": "./assets/fondos/frontend-junior.jpg",
+    "tags": [
+      "./assets/logos/html5_icon.svg",
+       "./assets/logos/css_icon.svg",
+       "./assets/logos/javascript_icon.svg"
+    ]
+  },
+  {
+    "output": "clase-02.png",
+    "lesson": "Clase 02",
+    "title": ["HTML", "Semántico"],
+    "titleColor": ["white", "green"],
+    "bgImage": "./assets/fondos/frontend-junior.jpg",
+    "tags": [
+      "./assets/logos/html5_icon.svg"
+    ]
+  }
+]

@@ -1,0 +1,13 @@
+{
+  "name": "academia-caratulas",
+  "version": "1.0.0",
+  "description": "Generador automático de carátulas para la Academia",
+  "type": "module",
+  "scripts": {
+    "generate": "node generate.js",
+    "generate:one": "node generate.js"
+  },
+  "devDependencies": {
+    "puppeteer": "^22.0.0"
+  }
+}
