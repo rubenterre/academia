@@ -65,16 +65,7 @@
 <section class="roadmap-node-page">
 	<div class="roadmap-node-layout">
 
-		<aside class="roadmap-node-sidebar">
-			<div class="card roadmap-detail-card roadmap-detail-card--sidebar">
-				<div class="card__body">
-					<h2 class="card__title">{roadmap.titulo}</h2>
-					<p class="card__description">Progreso total: {porcentaje}%</p>
-					<RoadmapTree roadmapSlug={roadmap.slug} nodes={indiceNodos} currentSlug={nodo.slug} />
-				</div>
-			</div>
-		</aside>
-
+		<!-- Contenido principal: ocupa la columna izquierda (mayor jerarquía visual) -->
 		<div class="roadmap-node-content">
 			<LessonPlayer title={nodo.titulo} videoId={nodo.video_youtube} />
 
@@ -93,6 +84,26 @@
 
 			<LessonNav roadmapSlug={roadmap.slug} previous={nodoAnterior} next={nodoSiguiente} />
 		</div>
+
+		<!-- Sidebar: columna derecha, árbol de navegación del roadmap -->
+		<aside class="roadmap-node-sidebar" aria-label="Navegación del roadmap">
+			<div class="card roadmap-detail-card roadmap-detail-card--sidebar">
+				<div class="card__body">
+					<div class="roadmap-node-sidebar__header">
+						<h2 class="roadmap-node-sidebar__title">{roadmap.titulo}</h2>
+						<span class="roadmap-node-sidebar__progress" aria-label={`Progreso: ${porcentaje}%`}>
+							{porcentaje}%
+						</span>
+					</div>
+					<div class="roadmap-node-sidebar__progress-bar" role="progressbar" aria-valuenow={porcentaje} aria-valuemin={0} aria-valuemax={100}>
+						<div class="roadmap-node-sidebar__progress-fill" style={`width: ${porcentaje}%`}></div>
+					</div>
+					<div class="roadmap-node-sidebar__tree">
+						<RoadmapTree roadmapSlug={roadmap.slug} nodes={indiceNodos} currentSlug={nodo.slug} />
+					</div>
+				</div>
+			</div>
+		</aside>
 
 	</div>
 </section>
