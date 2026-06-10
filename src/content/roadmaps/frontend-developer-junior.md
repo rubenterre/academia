@@ -5,18 +5,19 @@ descripcion: "Itinerario guiado para aprender las bases del desarrollo frontend 
 nivel: "principiante"
 duracion_estimada: "3–4 meses"
 target_role: "Frontend Developer Junior"
-imagen: "/roadmaps/frontend-developer-junior.png"
+imagen: "/roadmaps/frontend_developer_junior_curso_Thumbnail.avif"
 publicado: true
 fecha: 2026-06-08
 autor: "Rubén Terre"
 destacado: true
 nodos:
-  - 01-html-semantico
-  - 02-css-basico
-  - 03-javascript-fundamentos
-  - 04-git-y-github
-  - 05-introduccion-a-sveltekit
+  - 01-fundamentos
+  - 02-html-principiantes
+  - 03-css-principiantes
+  - 04-javascript-fundamentos
 ---
+
+## ATENCIÓN: A medida que estén publicados los vídeos se irán desbloqueando lecciones.
 
 Este roadmap organiza en un orden claro las habilidades base que necesitas para empezar tu camino como desarrollador frontend junior.
 

@@ -16,7 +16,7 @@
 
   &__item {
     position: relative;
-    padding-left: var(--space-6);
+   /*  padding-left: var(--space-6); */
   }
 
   &__connector {
@@ -27,6 +27,7 @@
     width: 2px;
     background: linear-gradient(180deg, var(--color-primary-highlight), var(--color-border));
     border-radius: var(--radius-full);
+    display: none;
   }
 
   &__node {

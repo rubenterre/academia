@@ -3,6 +3,7 @@
 	import '../styles/main.scss';
 	import Footer from '$lib/components/layouts/Footer.svelte';
 	import Navbar from '$lib/components/layouts/Navbar.svelte';
+	import CookieBanner from '$lib/components/CookieBanner.svelte';
 
 	let { children } = $props();
 </script>
@@ -29,4 +30,5 @@
 
 {@render children()}
 
+<CookieBanner/>
 <Footer />

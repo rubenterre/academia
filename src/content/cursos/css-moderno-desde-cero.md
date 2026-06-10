@@ -1,14 +1,14 @@
 ---
-titulo: "CSS moderno desde cero"
-slug: "css-moderno-desde-cero"
-descripcion: "Domina las técnicas de CSS más actuales: custom properties, container queries, grid avanzado, animaciones y más."
+titulo: "Fundamentos de desarrollo web"
+slug: "fundamentos-de-desarrollo-web"
+descripcion: "Comprende qué ocurre cuando abre un navegador y cómo se construye una web desde la idea hasta el despliegue."
 nivel: "principiante"
-duracion: "4h aprox."
-lecciones: 12
-categoria: "CSS"
+duracion: "20min aprox."
+lecciones: 1
+categoria: "Fundamentos"
 fecha: 2026-06-15
 publicado: true
 destacado: true
 ---
 
-Un recorrido completo por el CSS de hoy: desde variables y tipografía fluida hasta container queries, subgrid y animaciones modernas con @keyframes y transitions.
+En este video hay una primera parte de introducción y luego continuamos con el contenido de la primera lección en donde te mostraré cómo comenzar un proyecto web desde cero. Iremos paso a paso desde el briefing inicial hasta la primera fase de desarrollo.
