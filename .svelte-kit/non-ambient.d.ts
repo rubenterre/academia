@@ -53,6 +53,6 @@ declare module "$app/types" {
 		};
 		Pathname(): "/" | "/aviso-legal" | "/cookies" | "/cursos" | `/cursos/${string}` & {} | `/cursos/${string}/lecciones/${string}` & {} | "/privacidad" | "/proyecto" | "/roadmaps" | `/roadmaps/${string}` & {} | `/roadmaps/${string}/${string}` & {};
 		ResolvedPathname(): `${"" | `/${string}`}${ReturnType<AppTypes['Pathname']>}`;
-		Asset(): "/.DS_Store" | "/fonts/JetBrainsMono-VariableFont_wght.ttf" | "/fonts/JetBrainsMono-VariableFont_wght.woff2" | "/fonts/Poppins-Bold.ttf" | "/fonts/Poppins-Bold.woff2" | "/fonts/Poppins-Medium.ttf" | "/fonts/Poppins-Medium.woff2" | "/fonts/Poppins-Regular.ttf" | "/fonts/Poppins-Regular.woff2" | "/fonts/Sora-VariableFont_wght.ttf" | "/fonts/Sora-VariableFont_wght.woff2" | "/roadmaps/frontend-developer-junior.png" | "/roadmaps/frontend_developer_junior_curso_Thumbnail.avif" | "/roadmaps/html-semantico.png" | "/robots.txt" | string & {};
+		Asset(): "/.DS_Store" | "/fonts/JetBrainsMono-VariableFont_wght.ttf" | "/fonts/JetBrainsMono-VariableFont_wght.woff2" | "/fonts/Poppins-Bold.ttf" | "/fonts/Poppins-Bold.woff2" | "/fonts/Poppins-Medium.ttf" | "/fonts/Poppins-Medium.woff2" | "/fonts/Poppins-Regular.ttf" | "/fonts/Poppins-Regular.woff2" | "/fonts/Sora-VariableFont_wght.ttf" | "/fonts/Sora-VariableFont_wght.woff2" | "/og-image.png" | "/roadmaps/frontend-developer-junior.png" | "/roadmaps/frontend_developer_junior_curso_Thumbnail.avif" | "/roadmaps/html-semantico.png" | "/robots.txt" | string & {};
 	}
 }
