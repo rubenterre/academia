@@ -20,17 +20,17 @@
 		{
 			icono: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>`,
 			titulo: 'Código real',
-			desc: 'Se aprende escribiendo código, no viendo código. Cada curso tiene ejercicios prácticos y proyectos que puedes usar como referencia.'
+			desc: 'Se aprende escribiendo código, no viendo código. Cada nodo del roadmap incluye ejercicios prácticos y un proyecto que avanza contigo.'
 		},
 		{
 			icono: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 487 485" fill="currentColor" stroke="currentColor"><path d="M252 474.5c-3.7 2.1-7.8 3-11.4.8L13.7 344.4c-3.8-2.2-6.3-5.2-6.6-9.3s1.5-8 5.3-10.2l65.3-37.7-66-38.3c-3.3-1.9-4.6-5.9-4.5-9.1s1.5-7 4.8-8.9l65.8-38-65.4-37.8c-3.6-2.1-5.4-6-5.3-9.8s2.3-7.3 5.9-9.4L240.5 4.7c3.8-2.2 8-1.1 11.5.9L477.8 136c3.7 2.1 5.8 5.4 6 9.4s-1.6 7.7-5.3 9.8l-65.3 37.7 66.1 38.2c3.3 1.9 4.6 5.9 4.5 9.1s-1.5 7-4.8 8.9l-65.8 38 65.3 37.7c3.7 2.2 5.5 6.3 5.3 10.2s-2.8 7.2-6.6 9.4L251.9 474.5Zm199.1-328.7L245.5 27.2 39.9 145.7l205.6 118.6 205.6-118.6Zm-59.8 59.8-140.8 81.3c-3.7 1.7-7.1 1.6-10.6-.4L99.7 205.6 40 240.1l205.4 118.6 205.5-118.6-59.7-34.5Zm0 94.2-139.7 80.7c-3.7 2.1-7.4 2.5-11.2.6L99.7 299.9l-59.6 34.5L245.5 453l205.4-118.6-59.6-34.5Z"/></svg>`,
 			titulo: 'Stack moderno',
-			desc: 'SvelteKit, CSS moderno, JavaScript actual. No jQuery, no frameworks obsoletos. Lo que usarás en proyectos reales hoy.'
+			desc: 'SvelteKit, CSS moderno, JavaScript actual. Sin frameworks obsoletos, sin atajos que caducan. Lo que se usa en producción hoy.'
 		},
 		{
 			icono: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>`,
 			titulo: 'Siempre gratuito',
-			desc: 'Todo el contenido es libre y público. Si el proyecto te aporta valor, puedes apoyarlo con un café — pero nunca es obligatorio.'
+			desc: 'Todo el contenido es libre y público. Si los roadmaps te ayudan a avanzar, puedes invitarme a un café — pero nunca es obligatorio.'
 		}
 	];
 
@@ -71,7 +71,7 @@
 
 <svelte:head>
 	<title>El proyecto — Academia de desarrollo web</title>
-	<meta name="description" content="Qué es la Academia, por qué existe y cómo está construida. Cursos prácticos de SvelteKit, CSS y JavaScript sin relleno." />
+	<meta name="description" content="Qué es la Academia, por qué existe y cómo está construida. Roadmaps prácticos de SvelteKit, CSS y JavaScript con una progresión clara." />
 </svelte:head>
 
 <!-- HERO — misma estructura que la home -->
@@ -80,16 +80,15 @@
 		<div class="hero__content">
 			<p class="hero__eyebrow">El proyecto</p>
 			<h1 class="hero__title">
-				Aprender sin
-				<span class="hero__title-highlight">perder el tiempo</span>
+				Aprender con
+				<span class="hero__title-highlight">buen rumbo</span>
 			</h1>
 			<p class="hero__subtitle">
-				La Academia nació de una frustración concreta: los mejores recursos para aprender
-				desarrollo web moderno están en inglés, dispersos o llenos de relleno.
-				Esto es el intento de arreglarlo.
+				La Academia nació de una convicción simple: aprender desarrollo web moderno requiere orden,
+				no más contenido. Roadmaps con progresión, nodo a nodo, hasta dominar lo que importa.
 			</p>
 			<div class="hero__actions">
-				<a href="/cursos" class="btn btn--primary">Ver los cursos</a>
+				<a href="/roadmaps" class="btn btn--primary">Ver los roadmaps</a>
 				<a href="#principios" class="btn btn--ghost">Saber más</a>
 			</div>
 		</div>

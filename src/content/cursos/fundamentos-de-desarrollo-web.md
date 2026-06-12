@@ -7,7 +7,7 @@ duracion: "20min aprox."
 lecciones: 1
 categoria: "Fundamentos"
 fecha: 2026-06-15
-publicado: true
+publicado: false
 destacado: true
 ---
 
