@@ -1,14 +1,14 @@
 [
   {
-    "output": "clase-01.png",
-    "lesson": "Curso frontend developer junior",
+    "output": "crea-una-tarjeta-digital.png",
+    "lesson": "Curso Crea una tarjeta digital",
     "title": ["Frontend","developer", "Junior"],
     "titleColor": ["white","white","green"],
     "bgImage": "./assets/fondos/frontend-junior.jpg",
     "tags": [
       "./assets/logos/html5_icon.svg",
        "./assets/logos/css_icon.svg",
-       "./assets/logos/javascript_icon.svg"
+       "./assets/logos/github_icon.svg"
     ]
   },
   {
