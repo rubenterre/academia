@@ -1,10 +1,12 @@
 <script lang="ts">
 	import type { PageData } from './$types';
 	import RoadmapCard from '$lib/components/RoadmapCard.svelte';
+	import CourseCard from '$lib/components/CourseCard.svelte';
 	import cosmonauta from '$lib/assets/images/cosmonauta_green_alpha2.avif';
 
 	let { data }: { data: PageData } = $props();
 	const roadmapsDestacados = $derived(data.roadmapsDestacados);
+	const ultimosCursos = $derived(data.ultimosCursos);
 </script>
 
 <svelte:head>
@@ -71,6 +73,43 @@
 		{:else}
 			<div class="empty-state" role="status">
 				<p class="empty-state__text">Próximamente publicaremos los primeros roadmaps de la academia.</p>
+			</div>
+		{/if}
+	</div>
+</section>
+
+
+<section class="featured-courses" id="cursos-recientes">
+	<div class="section-container">
+		<div class="section-header">
+			<h2 class="section-header__title">Últimos cursos publicados</h2>
+			<p class="section-header__description">
+				¿Prefieres aprender algo concreto? Accede directamente a los cursos más recientes de la academia.
+			</p>
+		</div>
+
+		{#if ultimosCursos.length > 0}
+			<div class="courses-grid">
+				{#each ultimosCursos as curso (curso.slug)}
+					<CourseCard
+						title={curso.titulo}
+						description={curso.descripcion}
+						slug={curso.slug}
+						level={curso.nivel}
+						duration={curso.duracion}
+						lessons={curso.lecciones}
+						image={curso.imagen}
+						category={curso.categoria}
+					/>
+				{/each}
+			</div>
+
+			<div class="featured-courses__cta">
+				<a href="/cursos" class="btn btn--ghost">Ver todos los cursos →</a>
+			</div>
+		{:else}
+			<div class="empty-state" role="status">
+				<p class="empty-state__text">Próximamente publicaremos los primeros cursos de la academia.</p>
 			</div>
 		{/if}
 	</div>
